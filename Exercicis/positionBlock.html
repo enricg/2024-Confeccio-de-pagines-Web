@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Position: block, inline-block</title>
+  <link rel="stylesheet" href="CSS/position.css">
+  <style>
+    .caixa1{
+      width: 25%;
+      height: 300px;
+      background-color: red;
+    }
+    .caixa4{
+      width: 75%;
+      height: 300px;
+      background-color:grey;
+    }
+  </style>
+</head>
+<body>
+  <h1>Exemple elements amb display block i inline-block</h1>
+  <hr>
+  La caixa <span style="color: red;text-decoration: underline;">vermella (primer quadrat)</span> i la <span style="color: green;text-decoration: underline;">verda (segon quadrat)</span> tenen la propietat <b>inline-block</b>, trencat el fluxe natural de les caixes (block). És per això que estan una al costat de l'altra.<br>
+  La caixa <span style="color: yellow;text-decoration: underline;background-color: gray;">groga (tercer quadrat)</span>té la propietat per defecte, és <b>block</b>, per això es col·loca sota el quadrat vermell. El mateix passa amb la caixa <span style="color: gray;text-decoration: underline;">gris</span>.<br>
+  Finalment, la caixa <span style="color: pink;text-decoration: underline;">rosa (cinquè quadrat)</span>, també segueix el fluxe natural (block), però es troba dins d'un altra caixa (div).
+  <hr>
+  <div class="caixa1 inline-block">Primer quadrat</div>
+  <div class="caixa verd inline-block" >Segon quadrat</div>
+  <div class="caixa groc">Tercer quadrat</div>
+  <div class="caixa4">quart element
+    <div class="caixa rosa">cinque element</div>
+  </div>
+</body>
+</html>
