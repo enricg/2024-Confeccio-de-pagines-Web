@@ -3,9 +3,11 @@
 [Especificació HTML](https://html.spec.whatwg.org/#toc-dom)
 [HTML Cheat Sheet](https://htmlcheatsheet.com/)
 [Propietats abreviades - Shorthands](https://developer.mozilla.org/es/docs/Web/CSS/Shorthand_properties)
+
 # Gamificació
-## Selectors
-[CSS Dinner](https://flukeout.github.io/)
+[CSS Dinner](https://flukeout.github.io/) - Pràctica de selectors
+[Flexbox Defense](http://www.flexboxdefense.com/) - Pràctica de display flex
+
 # Generació de texts
 [LOREM.cat](https://www.lorem.cat/)
 [Chiquito Ipsum](https://www.chiquitoipsum.com/)
