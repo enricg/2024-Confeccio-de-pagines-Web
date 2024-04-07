@@ -1,0 +1,84 @@
+header {                
+    width: 100%;
+    height: 150px;
+    background-color: cadetblue;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    border: 3px solid black;
+    
+    
+}
+div {
+  
+}
+.contf {
+    
+    display: flex;
+    flex-direction: row;
+    
+    justify-content: space-between;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+.contfd {
+    background-color: rgb(9, 67, 69);
+    display: flex;
+    flex-direction: row;
+    color: aliceblue;
+    width: 80%;
+    border: 3px solid black;
+  
+    
+}
+.main {
+    
+    float: right;
+    border: 3px solid black;
+    
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 153px;
+    
+    width: 80%;
+    position: relative;
+    text-align: center;
+    
+}
+nav {
+    float: left;
+    padding: 16px;              
+}
+
+.box {
+    
+    padding: 5px;
+}
+h1 {
+    width: 80%;
+}
+.bild {
+    position: absolute;
+}
+.topleft {
+    position: absolute; top: 133px; left: -21px;
+}
+.topright {
+    position: absolute;  top: 133px; right: -19px;
+}
+.bottomleft {
+    position: absolute; bottom: -24px; left: -22px;
+}
+.bottomright {
+    position: absolute;  bottom: -24px; right: -19px;
+}
+body {
+    
+}
+p {
+    font-size: 15px;
+}
