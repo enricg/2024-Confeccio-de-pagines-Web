@@ -7,6 +7,7 @@
 # Gamificació
 [CSS Dinner](https://flukeout.github.io/) - Pràctica de selectors
 [Flexbox Defense](http://www.flexboxdefense.com/) - Pràctica de display flex
+[CSS Garden](https://cssgridgarden.com/) - Pràctica de display Grid
 
 # Generació de texts
 [LOREM.cat](https://www.lorem.cat/)
