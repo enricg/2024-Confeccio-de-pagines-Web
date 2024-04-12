@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dislay: Flex</title>
+  <link rel="stylesheet" href="CSS/04-flex.css">
+</head>
+<body>
+  <h1>Exemple de visualització: display flex</h1>
+  <hr>
+  <h2>flex-direction</h2>
+  <div class="grup">
+    <div class="targeta">
+      <h3>row</h3>
+      <div class="containerFlex" style="flex-direction: row;">  
+        <div class="caixaFlex rosa">1</div>
+        <div class="caixaFlex blau">2</div>
+        <div class="caixaFlex verd">3</div>
+        <div class="caixaFlex taronja">4</div>
+      </div>
+    </div>
+    <div class="targeta">
+      <h3>row-reverse</h3>
+      <div class="containerFlex"  style="flex-direction:row-reverse">
+        <div class="caixaFlex rosa">1</div>
+        <div class="caixaFlex blau">2</div>
+        <div class="caixaFlex verd">3</div>
+        <div class="caixaFlex taronja">4</div>
+      </div>
+  </div>
+  <div class="targeta">
+    <h3>column</h3>
+    <div class="containerFlex"  style="flex-direction:column">
+      <div class="caixaFlex rosa">1</div>
+      <div class="caixaFlex blau">2</div>
+      <div class="caixaFlex verd">3</div>
+      <div class="caixaFlex taronja">4</div>
+    </div>
+  </div>
+  <div class="targeta">
+    <h3>column-reverse</h3>
+    <div class="containerFlex"  style="flex-direction:column-reverse">
+      <div class="caixaFlex rosa">1</div>
+      <div class="caixaFlex blau">2</div>
+      <div class="caixaFlex verd">3</div>
+      <div class="caixaFlex taronja">4</div>
+    </div>
+  </div>
+</div>
+  <h2>justify-content</h2>
+  <div class="grup">
+    <div class="targeta">
+      <h3>flex-start</h3>
+      <div class="containerFlex" style="justify-content: flex-start;">  
+        <div class="caixaFlex rosa">1</div>
+        <div class="caixaFlex blau">2</div>
+        <div class="caixaFlex verd">3</div>
+        <div class="caixaFlex taronja">4</div>
+      </div>
+    </div>
+    <div class="targeta">  
+      <h3>flex-end</h3>
+      <div class="containerFlex"  style="justify-content:flex-end">
+        <div class="caixaFlex rosa">1</div>
+        <div class="caixaFlex blau">2</div>
+        <div class="caixaFlex verd">3</div>
+        <div class="caixaFlex taronja">4</div>
+      </div>
+    </div>
+    <div class="targeta">
+      <h3>center</h3>
+      <div class="containerFlex"  style="justify-content:center">
+        <div class="caixaFlex rosa">1</div>
+        <div class="caixaFlex blau">2</div>
+        <div class="caixaFlex verd">3</div>
+        <div class="caixaFlex taronja">4</div>
+      </div>
+    </div>
+    <div class="targeta">
+      <h3>space-between</h3>
+      <div class="containerFlex"  style="justify-content:space-between">
+        <div class="caixaFlex rosa">1</div>
+        <div class="caixaFlex blau">2</div>
+        <div class="caixaFlex verd">3</div>
+        <div class="caixaFlex taronja">4</div>
+      </div>
+    </div>
+    <div class="targeta">
+      <h3>space-around</h3>
+      <div class="containerFlex"  style="justify-content:space-around">
+        <div class="caixaFlex rosa">1</div>
+        <div class="caixaFlex blau">2</div>
+        <div class="caixaFlex verd">3</div>
+        <div class="caixaFlex taronja">4</div>
+      </div>
+    </div>
+  </div>
+    <h2>align-items</h2>
+    <div class="grup">
+      <div class="targeta">
+        <h3>flex-start</h3>
+        <div class="containerFlex" style="align-items: flex-start;">  
+          <div class="caixaFlex rosa">1</div>
+          <div class="caixaFlex blau">2</div>
+          <div class="caixaFlex verd">3</div>
+          <div class="caixaFlex taronja">4</div>
+        </div>
+      </div>
+      <div class="targeta">
+        <h3>flex-end</h3>
+        <div class="containerFlex" style="align-items:flex-end">
+          <div class="caixaFlex rosa">1</div>
+          <div class="caixaFlex blau">2</div>
+          <div class="caixaFlex verd">3</div>
+          <div class="caixaFlex taronja">4</div>
+        </div>
+      </div>
+      <div class="targeta">
+        <h3>center</h3>
+        <div class="containerFlex" style="align-items:center">
+          <div class="caixaFlex rosa">1</div>
+          <div class="caixaFlex blau">2</div>
+          <div class="caixaFlex verd">3</div>
+          <div class="caixaFlex taronja">4</div>
+        </div>
+      </div>
+      <div class="targeta">
+        <h3>baseline</h3>
+        <div class="containerFlex" style="align-items:baseline">
+          <div class="caixaFlex rosa">1</div>
+          <div class="caixaFlex blau">2</div>
+          <div class="caixaFlex verd">3</div>
+          <div class="caixaFlex taronja">4</div>
+        </div>
+      </div>
+      <div class="targeta">
+        <h3>stretch</h3>
+        <div class="containerFlex" style="align-items:stretch">
+          <div class="caixaFlex rosa">1</div>
+          <div class="caixaFlex blau">2</div>
+          <div class="caixaFlex verd">3</div>
+          <div class="caixaFlex taronja">4</div>
+        </div>
+      </div>
+    </div>
+      <h2>align-content</h2>
+      <div class="grup">
+        <div class="targeta">
+          <h3>flex-start</h3>
+          <div class="containerFlex" style="flex-wrap: wrap; align-content: flex-start;">  
+            <div class="caixaFlex rosa">1</div>
+            <div class="caixaFlex blau">2</div>
+            <div class="caixaFlex verd">3</div>
+            <div class="caixaFlex taronja">4</div>
+          </div>
+        </div>
+        <div class="targeta">
+          <h3>flex-end</h3>
+          <div class="containerFlex"  style="flex-wrap: wrap;align-content:flex-end;">
+            <div class="caixaFlex rosa">1</div>
+            <div class="caixaFlex blau">2</div>
+            <div class="caixaFlex verd">3</div>
+            <div class="caixaFlex taronja">4</div>
+          </div>
+        </div>
+        <div class="targeta">
+          <h3>center</h3>
+          <div class="containerFlex" style="flex-wrap: wrap;align-content:center;">
+            <div class="caixaFlex rosa">1</div>
+            <div class="caixaFlex blau">2</div>
+            <div class="caixaFlex verd">3</div>
+            <div class="caixaFlex taronja">4</div>
+          </div>
+        </div>
+        <div class="targeta">
+          <h3>space-between</h3>
+          <div class="containerFlex" style="flex-wrap: wrap;align-content:space-between;">
+      <div class="caixaFlex rosa">1</div>
+      <div class="caixaFlex blau">2</div>
+      <div class="caixaFlex verd">3</div>
+      <div class="caixaFlex taronja">4</div>
+    </div>
+  </div>
+  <div class="targeta">
+    <h3>space-around</h3>
+    <div class="containerFlex" style="flex-wrap: wrap;align-content:space-around">
+      <div class="caixaFlex rosa">1</div>
+      <div class="caixaFlex blau">2</div>
+      <div class="caixaFlex verd">3</div>
+      <div class="caixaFlex taronja">4</div>
+    </div>
+  </div>
+  </div>
+</body>
+</html>

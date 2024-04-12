@@ -1,5 +1,5 @@
 # Configuración GIT
-![Funcionament GitHub](./Imatges/vcs.png)
+![Funcionament GitHub](../imatges/vcs.png)
 ## Instalación de Git
 ### Para Ubuntu
 1- Actualitzar paquetes
@@ -23,28 +23,28 @@ git config --global user.email "micorreo@mail.com"
 Dos maneras de hacerlo
 ### Crear repositorio en plataforma GitHub, clonarlo en tu PC i trabajar con él (recomendado)
 1- Crear repositorio
-![](./Imatges/new-repo.png)
+![](../imatges/new-repo.png)
 2- Elegir nombre, descripción, marcar opción "Inicializar repositorio con un README", y clic en botón "Crear Repositorio".
-![](./Imatges/readme.png)
+![](../imatges/readme.png)
 3- Clonar repositorio
-![](./Imatges/github-project.png)
+![](../imatges/github-project.png)
 Des de la terminal escribir:
 ```
 git clone [DIRECCION HTTPS]
 ```
-![](./Imatges/cmd-1.png)
+![](../imatges/cmd-1.png)
 Des de la terminal escribir:
 ```
 cd [NOMBRE DEL REPOSITORIO]
 ```
-![](./Imatges/cmd-2.png
+![](../imatges/cmd-2.png
 )
 Estando en la terminal, y habiendo clonado el proyecto en nuestro equipo, dentro del directorio de trabajo del proyecto, tenemos 4 pasos en un **commit**:
 1- "status": revisión del estado de los archivos
 ```
 git status
 ```
-![](./Imatges/git-status-1.png)
+![](../imatges/git-status-1.png)
 2- "add": agregar los archivos que queremos llevar al *commit*
 ```
 git add [NOMBRE DE ARCHIVO] [NOMBRE DE ARCHIVO] [...]
@@ -53,7 +53,7 @@ En el ejemplo mostrado, agregamos un solo archivo
 ```
 git add sample.html
 ```
-![](./Imatges/sample.png)
+![](../imatges/sample.png)
 Si quisiéramos agregar **todos** los archivos modificados, escribiremos la instrucción con un punto
 ```
 git add .
@@ -62,38 +62,38 @@ git add .
 ```
 git commit -m "Se agregó archivo HTML de muestra que contiene síntaxis basica"
 ```
-![](./Imatges/commit-1.png)
+![](../imatges/commit-1.png)
 4- "push": subir los cambios a la plataforma de *GitHub*. Para realizarlo, deberemos enviarlo a *Remote*, que es una instancia duplicada de nuestro proyecto, en la nube. Normalmente, el nombre del *Remote* se nombra como **origin**.
 Para saber el nombre, escribimos en la terminal:
 ```
 git remote
 ```
-![](./Imatges/remote-1.png)
+![](../imatges/remote-1.png)
 Para enviar el trabajo escribiremos lo siguiente:
 ```
 git push origin master
 ```
 Ahora, si vamos a la plataforma podremos ver que los cambios ya se han subido
-![](./Imatges/push-1.png)
+![](../imatges/push-1.png)
 > Explicación sobre como enviar o recibir de GitHub
-![](./Imatges/explanation.png)
+![](../imatges/explanation.png)
 **Pulling**: recibir de GitHub
 **Pushing**: enviar a GitHub
 ### Trabajar en tu proyecto localmente y después crear el repositorio en GitHub y enviarlo a remote
 1- Des de la terminal nos situamos en el directorio de nuestro proyecto
-![](./Imatges/type-2.png)
+![](../imatges/type-2.png)
 2- Convertimos el directorio en repositorio.
 En la terminal escribimos
 ```
 git init
 ```
-![](./Imatges/init.png)
+![](../imatges/init.png)
 3- Revisamos estado
 Imaginemos que hemos creado dos archivos. Estos deberan verse a continuación
 ```
 git status
 ```
-![](./Imatges/status-2.png)
+![](../imatges/status-2.png)
 4- Añadir estos archivos a estado "stage"
 ```
 git add [FILENAME] [FILENAME] [...]
@@ -104,19 +104,19 @@ git add [FILENAME] [FILENAME] [...]
 git add .
 ```
 Si, a continuación, hacemos la revisión, visualizaremos los archivos en color verde. Significa que ya estan listos para hacer el **commit**
-![](./Imatges/commit-1.png)
+![](../imatges/commit-1.png)
 A continuación realizamos el commit
 ```
 git commit -m "Agregando un formulario web de encuesta"
 ```
-![](./Imatges/survey-form.png)
+![](../imatges/survey-form.png)
 Para empezar a subir los cambios a la plataforma de GitHub, hay que crear un *enlace* con el *Remote*
 Vamos a GitHub --> creamos un proyecto y lo nombramos, y hacemos clic en el botón "Crear Repositorio".
 > IMPORTANTE: al crear este proyecto en GitHub, no lo inicialices con un archivo README
 
-![](./Imatges/new-repo-2.png)
+![](../imatges/new-repo-2.png)
 A continuación verás la siguiente imagen
-![](./Imatges/web-page.png)
+![](../imatges/web-page.png)
 Copia la direccón HTTPS para poder crear el enlace con *Remote*
 ```
 git remote add origin [DIRECCION HTTPS]
@@ -130,7 +130,7 @@ Ahora ya podemos enviar nuestro proyecto a GitHub
 git push origin master
 ```
 Podemos revisar en la plataforma si nuestro código ya se ha subido
-![](./Imatges/final.png)
+![](../imatges/final.png)
 
 ---
 Tutorial extraído de: [La guía para principiantes de Git y GitHub](https://www.freecodecamp.org/espanol/news/guia-para-principiantes-de-git-y-github/)
