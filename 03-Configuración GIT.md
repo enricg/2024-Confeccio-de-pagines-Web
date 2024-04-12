@@ -1,60 +1,136 @@
-# Paso a paso para configurar una cuenta de Git y conectarla con GitHub:
-1- Instala Git:
-Si aún no tienes Git instalado en tu sistema, descárgalo e instálalo desde el sitio web oficial de Git (https://git-scm.com/). Sigue las instrucciones para tu sistema operativo específico.
-
-2- Configura Git:
-Abre tu terminal (en Windows, puedes usar Git Bash que viene con la instalación de Git). Configura tu nombre de usuario y tu dirección de correo electrónico utilizando los siguientes comandos, sustituyendo "Tu Nombre" y "tu@email.com" con tu información real:
+# Configuración GIT
+![Funcionament GitHub](./Imatges/vcs.png)
+## Instalación de Git
+### Para Ubuntu
+1- Actualitzar paquetes
 ```
-cmd
-git config --global user.name "Tu Nombre"
-git config --global user.email "tu@email.com"
+sudo apt update
 ```
-3- Genera una clave SSH (opcional pero recomendado):
-Si prefieres autenticación SSH en lugar de HTTPS, genera una nueva clave SSH usando el siguiente comando:
+2- Instalación Git
 ```
-cmd
-Copy code
-ssh-keygen -t rsa -b 4096 -C "tu@email.com"
+sudo apt-get install git
 ```
-Sigue las instrucciones y deja el nombre de archivo predeterminado si no tienes una razón específica para cambiarlo.
-
-4- Añade la clave SSH a tu cuenta de GitHub (si has creado una):
-Si aún no tienes una cuenta de GitHub, créala en https://github.com/join.
-Después de crear tu cuenta, ve a la configuración de tu perfil en GitHub y selecciona "SSH and GPG keys". Haz clic en "New SSH key" y pega el contenido de tu clave pública SSH (~/.ssh/id_rsa.pub en sistemas Unix) en el campo proporcionado.
-5- Clona un repositorio existente de GitHub o crea uno nuevo:
-Para clonar un repositorio existente desde GitHub, copia la URL del repositorio y utiliza el comando 'git clone' seguido de la URL en tu terminal. Por ejemplo:
+3- Verificar instalación
 ```
-cmd
-git clone git@github.com:usuario/repositorio.git
+git --version
 ```
-Si prefieres crear un nuevo repositorio, ve a tu cuenta de GitHub y haz clic en el botón "New" en la esquina superior derecha de la página.
-
-6- Haz cambios en tu repositorio local:
-Ve al directorio clonado de tu repositorio o al nuevo repositorio que has creado y realiza cambios en tus archivos.
-
-7- Agrega tus cambios al área de preparación (staging area):
-Utiliza el comando 'git add' para agregar los archivos modificados al área de preparación. Por ejemplo:
+4- Establecer nombre de usuario i correo electrónico predeterminados para salvar el trabajo
 ```
-cmd
+git config --global user.name "Mi nombre"
+git config --global user.email "micorreo@mail.com"
+```
+## Trabajando con proyextos GitHub
+Dos maneras de hacerlo
+### Crear repositorio en plataforma GitHub, clonarlo en tu PC i trabajar con él (recomendado)
+1- Crear repositorio
+![](./Imatges/new-repo.png)
+2- Elegir nombre, descripción, marcar opción "Inicializar repositorio con un README", y clic en botón "Crear Repositorio".
+![](./Imatges/readme.png)
+3- Clonar repositorio
+![](./Imatges/github-project.png)
+Des de la terminal escribir:
+```
+git clone [DIRECCION HTTPS]
+```
+![](./Imatges/cmd-1.png)
+Des de la terminal escribir:
+```
+cd [NOMBRE DEL REPOSITORIO]
+```
+![](./Imatges/cmd-2.png
+)
+Estando en la terminal, y habiendo clonado el proyecto en nuestro equipo, dentro del directorio de trabajo del proyecto, tenemos 4 pasos en un **commit**:
+1- "status": revisión del estado de los archivos
+```
+git status
+```
+![](./Imatges/git-status-1.png)
+2- "add": agregar los archivos que queremos llevar al *commit*
+```
+git add [NOMBRE DE ARCHIVO] [NOMBRE DE ARCHIVO] [...]
+```
+En el ejemplo mostrado, agregamos un solo archivo
+```
+git add sample.html
+```
+![](./Imatges/sample.png)
+Si quisiéramos agregar **todos** los archivos modificados, escribiremos la instrucción con un punto
+```
 git add .
 ```
-8- Confirma tus cambios:
-Utiliza el comando git commit para confirmar los cambios que has agregado al área de preparación:
+3- "commit": se debe escribir un mensaje informativo de los cambios realizados
 ```
-cmd
-git commit -m "Mensaje descriptivo de tus cambios"
+git commit -m "Se agregó archivo HTML de muestra que contiene síntaxis basica"
 ```
-9- Envía tus cambios a GitHub:
-Utiliza el comando git push para enviar tus cambios al repositorio remoto en GitHub:
+![](./Imatges/commit-1.png)
+4- "push": subir los cambios a la plataforma de *GitHub*. Para realizarlo, deberemos enviarlo a *Remote*, que es una instancia duplicada de nuestro proyecto, en la nube. Normalmente, el nombre del *Remote* se nombra como **origin**.
+Para saber el nombre, escribimos en la terminal:
 ```
-cmd
-git push origin nombre-de-tu-rama
+git remote
 ```
-Si estás trabajando en la rama principal (generalmente llamada main o master), no necesitas especificar el nombre de la rama.
-10- Actualiza tu repositorio local desde GitHub (opcional):
-Si otras personas están colaborando en el mismo repositorio y han realizado cambios, puedes usar git pull para actualizar tu repositorio local:
+![](./Imatges/remote-1.png)
+Para enviar el trabajo escribiremos lo siguiente:
 ```
-cmd
-git pull origin nombre-de-tu-rama
+git push origin master
 ```
-Esto sincronizará tu repositorio local con la versión más reciente en GitHub.
+Ahora, si vamos a la plataforma podremos ver que los cambios ya se han subido
+![](./Imatges/push-1.png)
+> Explicación sobre como enviar o recibir de GitHub
+![](./Imatges/explanation.png)
+**Pulling**: recibir de GitHub
+**Pushing**: enviar a GitHub
+### Trabajar en tu proyecto localmente y después crear el repositorio en GitHub y enviarlo a remote
+1- Des de la terminal nos situamos en el directorio de nuestro proyecto
+![](./Imatges/type-2.png)
+2- Convertimos el directorio en repositorio.
+En la terminal escribimos
+```
+git init
+```
+![](./Imatges/init.png)
+3- Revisamos estado
+Imaginemos que hemos creado dos archivos. Estos deberan verse a continuación
+```
+git status
+```
+![](./Imatges/status-2.png)
+4- Añadir estos archivos a estado "stage"
+```
+git add [FILENAME] [FILENAME] [...]
+```
+> Recuerda que si queremos añadir todos los archivos modificados, podemos escribir un punto, en vez de cada uno de los archivos
+
+```
+git add .
+```
+Si, a continuación, hacemos la revisión, visualizaremos los archivos en color verde. Significa que ya estan listos para hacer el **commit**
+![](./Imatges/commit-1.png)
+A continuación realizamos el commit
+```
+git commit -m "Agregando un formulario web de encuesta"
+```
+![](./Imatges/survey-form.png)
+Para empezar a subir los cambios a la plataforma de GitHub, hay que crear un *enlace* con el *Remote*
+Vamos a GitHub --> creamos un proyecto y lo nombramos, y hacemos clic en el botón "Crear Repositorio".
+> IMPORTANTE: al crear este proyecto en GitHub, no lo inicialices con un archivo README
+
+![](./Imatges/new-repo-2.png)
+A continuación verás la siguiente imagen
+![](./Imatges/web-page.png)
+Copia la direccón HTTPS para poder crear el enlace con *Remote*
+```
+git remote add origin [DIRECCION HTTPS]
+```
+Verificamos que se ha realizado correctamente:
+```
+git remote
+```
+Ahora ya podemos enviar nuestro proyecto a GitHub
+```
+git push origin master
+```
+Podemos revisar en la plataforma si nuestro código ya se ha subido
+![](./Imatges/final.png)
+
+---
+Tutorial extraído de: [La guía para principiantes de Git y GitHub](https://www.freecodecamp.org/espanol/news/guia-para-principiantes-de-git-y-github/)
