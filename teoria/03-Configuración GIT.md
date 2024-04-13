@@ -19,7 +19,7 @@ git --version
 git config --global user.name "Mi nombre"
 git config --global user.email "micorreo@mail.com"
 ```
-## Trabajando con proyextos GitHub
+## Trabajando con proyectos GitHub
 Dos maneras de hacerlo
 ### Crear repositorio en plataforma GitHub, clonarlo en tu PC i trabajar con él (recomendado)
 1- Crear repositorio
