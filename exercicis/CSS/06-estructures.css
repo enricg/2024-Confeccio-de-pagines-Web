@@ -1,46 +1,154 @@
-.grid {
-    margin: 0;
-    padding: 0;
-    display: grid;
-    grid-template-rows: auto 1fr auto; /* Files: Header, Main Content, Footer */
-    grid-template-columns: 200px 1fr; /* Columnes: Nav, Contingut Principal */
+h1, h2{
+    text-align: center;
+}
+
+.exemple{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+/* Conté el títol i la visualització de l'exemple */
+.tarjeta{
+    width: 400px;
+    height: 250px;
+    margin: 50px 5px 5px 5px;
+}
+
+.contenidor{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+} 
+
+.seccio{
+    display: flex;
+    flex-direction:column;
+    justify-content: space-around;
+    background-color: aqua;
+    width: 80px;
+    height: 120px;
+}
+
+.article{
+    background-color: blueviolet;
+    width: 50px;
+    height: 30px;
+    margin-left: 15px;
+}
+
+.titol{
+    text-align: center;
+    font-size: .8rem;
+}
+.item{
+    border: 3px solid black;
+    text-align:center;
+}
+
+/* Estils utilitzant caixes semàntiques o divs */
+.capcalera{
+    background-color:gray;
+    width: 100%;
+    height: 50px;;
+}
+.menu{
+    background-color:orange;
+    width: 100px;
+    height: 150px;
+    float: left;
+}
+.principal{
+    background-color:brown;
+    width: 200px;
+    height: 150px;
+    float: left;
+}
+.aside{
+    background-color:green;
+    width: 100px;
+    height: 150px;
+    float: left;
+}
+.peu{
+    background-color:blue;
+    width: 100%;
+    height: 50px;
+    float: left;
+} 
+
+/* Classes utilitzades amb grid amb atributs resumits */
+.contenidor-gar{
+    display:grid;
+    grid-template-columns:auto auto auto auto auto;
+    grid-template-rows: 50px 50px 50px 50px 50px;
+    background-color:yellow;
+    padding:5px;
+}
+
+.sh-capcalera{
+    background-color:gray;
+    grid-column: 1 / 6;
+    grid-row: 1/2;
+}
+.sh-menu{
+    background-color:orange;
+    grid-column: 1 / 2;
+    grid-row: 2/5;
+}
+.sh-principal{
+    background-color:brown;
+    grid-column: 2 / 5;
+    grid-row: 2/5;
+}
+.sh-aside{
+    background-color:green;
+    grid-column: 5 / 6;
+    grid-row: 2/5;
+}
+.sh-peu{
+    background-color:blue;
+    grid-column: 1 / 6;
+    grid-row: 5/6;
+}
+
+/* Classes utilitzades amb grid assignant noms a àrees */
+.ga-contenidor{
+    display:grid;			
+    background-color:yellow;
+    padding:5px;
     grid-template-areas:
-        "header header header"
-        "nav main aside"
-        "footer footer footer";
-    min-height: 100vh;
-}
+    'capcalera capcalera capcalera capcalera'
+    'menu main main aside'
+    'menu main main aside'
+    'menu main main aside'
+    'footer footer footer footer';
+    height:250px;
 
-header {
-    grid-area: header;
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
 }
-
-nav {
-    grid-area: nav;
-    background-color: #666;
-    color: #fff;
-    padding: 20px;
+.item2{
+    border: 3px solid black;
+    text-align:center;
+    
 }
-
-main {
-    grid-area: main;
-    background-color: #eee;
-    padding: 20px;
+.ga-capcalera{
+    background-color:gray;
+    grid-area:capcalera;
 }
-
-aside {
-    grid-area: aside;
-    background-color: #999;
-    color: #fff;
-    padding: 20px;
+.ga-menu{
+    background-color:orange;
+    grid-area:menu;
 }
-
-footer {
-    grid-area: footer;
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
+.ga-main{
+    background-color:brown;
+    grid-area:main;
+}
+.ga-aside{
+    background-color:green;
+    grid-area:aside;
+}
+.ga-footer{
+    background-color:blue;
+    grid-area:footer;
 }

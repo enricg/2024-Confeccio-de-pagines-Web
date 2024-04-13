@@ -1,19 +1,77 @@
 <!DOCTYPE html>
-<html lang="ca">
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Pàgina amb Display Grid</title>
-<link rel="stylesheet" href="./CSS/06-estructures.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graelles: display: grid</title>
+    <link rel="stylesheet" href="./CSS/06-estructures.css">
 </head>
 <body>
-    <div>Exemple amb grid</div>
-    <div class="grid">
-        <header>Header</header>
-        <nav>Nav</nav>
-        <main>Main Content</main>
-        <aside>Aside</aside>
-        <footer>Footer</footer>
-    </div>
+	<h1>Exercici de distribució de contingut amb grid</h1>
+	<hr>
+	<div class="exemple">
+		<div class="tarjeta">
+			<h2 class="titol">Utilitzant caixes semàntiques</h2>
+			<hr>
+            <header class=" capcalera">Capçalera</header>
+            <nav class=" menu">Menú</nav>
+            <main class=" principal">Principal
+                <div class="contenidor">
+                    <section class="seccio">Secció
+                        <article class="article">Article</article>
+                        <article class="article">Article</article>
+                    </section>
+                    <section class="seccio">Secció
+                        <article class="article">Article</article>
+                        <article class="article">Article</article>
+                    </section>
+                </div>
+            </main>
+				<aside class=" aside">Aside</aside>
+				<footer class=" peu">Peu</footer>
+		</div>
+		<div class="tarjeta">
+			<h2 class="titol">Utilitzant caixes divs</h2>
+			<hr>
+            <div class="capcalera">Capçalera</div>
+            <div class="menu">Menú</div>
+            <div class="principal">Principal
+                <div class="contenidor">
+                    <div class="seccio">Secció
+                        <div class="article">Article</div>
+                        <div class="article">Article</div>
+                    </div>
+                    <div class="seccio">Secció
+                        <div class="article">Article</div>
+                        <div class="article">Article</div>
+                    </div>
+                </div>
+                </div>
+				<div class="aside">Aside</div>
+				<div class="peu">Peu</div>
+		</div>
+		<div class="tarjeta">
+			<h2 class="titol">Distribució de grid amb atributs resumits</h2>
+			<hr>
+			<div class="contenidor-gar">
+				<header class="item sh-capcalera">Capçalera</header>
+				<nav class="item sh-menu">Menú</nav>
+				<main class="item sh-principal">Principal</main>
+				<aside class="item sh-aside">Aside</aside>
+				<footer class="item sh-peu">Peu</footer>
+			</div>
+		</div>
+		<div class="tarjeta">
+			<h2 class="titol">Distribució de grid assignant noms a àrees</h2>
+			<hr>
+			<div class="ga-contenidor">
+				<div class="item2 ga-capcalera">Capçalera</div>
+				<div class="item2 ga-menu">Menú</div>
+				<div class="item2 ga-main">Principal</div>
+				<div class="item2 ga-aside">Aside</div>
+				<div class="item2 ga-footer">Peu</div>
+			</div>
+		</div>
+	</div>
 </body>
 </html>
