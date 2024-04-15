@@ -1,0 +1,109 @@
+/* Estils genèrics*/
+header{
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+}
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.targeta{
+    width: 300px;
+    height: 400px;
+    border: 1px dotted black;
+    border-radius: 10%;
+    margin: 5px;
+    padding: 10px;
+}
+
+.titol{
+    border-bottom: 1px dotted black;
+    height: 20%;
+    text-align: center;
+    align-content: center;
+}
+
+.cos{
+    height: 80%;
+    line-height: 1.5;
+}
+/* :link / :visited / :active / :hover */
+a:hover{
+    cursor: crosshair;
+}
+
+
+a:active{
+    background-color: red;
+}
+
+a:link{
+    font-size: large;
+    color: brown;
+    text-decoration: none;
+}
+
+a:visited{
+    color: chartreuse;
+    text-decoration: underline;
+}
+
+/* first-child / last-child */
+main .targeta:nth-child(2) p:first-child{
+    background-color: blue;
+}
+
+main .targeta:nth-child(2) p:last-child{
+    background-color: red;
+}
+
+/* first-of-type / last-of-type*/
+main .targeta:nth-child(3) p:first-of-type, main .targeta:nth-child(3) span:first-of-type{
+    background-color: pink;
+}
+
+main .targeta:nth-child(3) p~div:last-of-type{
+    background-color: orange;
+}
+
+
+/* :nth-child(_) / nth-lastchild(_) */
+main .targeta:nth-child(4) li:nth-child(2){
+    background-color: orange;   
+    list-style: none;
+}
+
+li:nth-last-child(3){
+    background-color: green;   
+    list-style: none;
+}
+
+/* :nth-of-type(_) / :nth-last-of-type(_) */
+main .targeta:nth-child(5) p:nth-of-type(2){
+    background-color: yellowgreen;
+}
+
+main .targeta:nth-child(5) div:nth-last-of-type(3){
+    background-color: magenta;
+}
+
+/* :only-child */
+
+main .targeta:nth-child(6) li:only-child{
+    background-color: chocolate;
+}
+
+
+/* :only-of-type */
+main .targeta:nth-child(7) p:only-of-type{
+    background-color: blueviolet;
+}
+
+/* :empty */
+main .targeta:nth-child(8) div:empty{
+    background-color: purple;
+    padding: 10px;
+}

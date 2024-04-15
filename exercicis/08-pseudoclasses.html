@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemple de Pseudoclasses</title>
+    <link rel="stylesheet" href="./CSS/08-pseudoclasses.css">
+</head>
+<body>
+    <header>Exemple de pseudoclasses</header>
+    <hr>
+    <main>
+        <div class="targeta">
+            <div class="titol">:link / :visited / :active / :hover</div>
+            <div class="cos">
+                <a href="https://www.google.com" target="_blank">Anar a pàgina  de Google</a>
+                <br><a href="./exerciciFlex.html" target="_blank">Anar a exercici Flex</a>
+                <br><a href="./selectores.html">Selectors</a>
+            </div>
+        </div>
+        <div class="targeta">
+            <div class="titol">:first-child / :last-child</div>
+            <div class="cos">
+                <p>Sóc el primer paràgraf (first-child)</p>
+                <p>Sóc el segon paràgraf</p>
+                <p>Sóc el tercer paràgraf (last-child)</p>
+            </div>
+        </div>
+        <div class="targeta">
+            <div class="titol">:first-of-type / :last-of-type</div>
+            <div class="cos">
+                <div>Sóc el primer DIV</div>
+                <p>Sóc el primer paràgraf</p>
+                <p>Sóc el segon paràgraf</p>
+                <span>Sóc l'SPAN</span>
+                <div>Sóc el segon DIV</div>
+            </div>
+        </div>
+        <div class="targeta">
+            <div class="titol">:nth-child(_) / nth-last-child(_)</div>
+            <div class="cos">
+                <ul>
+                    <li>Sóc l'opció #1</li>
+                    <li>Sóc l'opció #2</li>
+                    <li>Sóc l'opció #3</li>
+                    <li>Sóc l'opció #4</li>
+                    <li>Sóc l'opció #5</li>
+                    <li>Sóc l'opció #6</li>
+                    <li>Sóc l'opció #7</li>
+                    <li>Sóc l'opció #8</li>
+                </ul>
+            </div>
+        </div>
+        <div class="targeta">
+            <div class="titol">:nth-of-type(_) / :nth-last-of-type(_)</div>
+            <div class="cos">
+                <p>Primer paràgraf</p>
+                <div>Primer DIV</div>
+                <div>Segon DIV</div>
+                <p>Segon paràgraf</p>
+                <p>Tercer paràgraf</p>
+                <span>Sóc l'únic SPAN</span>
+                <p>Quart paràgraf</p>
+                <div>Tercer DIV</div>
+            </div>
+        </div>
+        <div class="targeta">
+            <div class="titol">:only-child</div>
+            <div class="cos">
+                <ul>
+                    <li>Llista 1 primer</li>
+                    <li>Llista 1 segon</li>
+                    </ul>
+                    <ul>
+                        <li>Llista 2 únic</li>
+                    </ul>
+                    <ul>
+                        <li>Llista 3 primer</li>
+                        <li>Llista 3 Segon</li>
+                        <li>Llista 3 tercer</li>
+                    </ul>
+                    <ul>
+                        <li>Llista 4 únic</li>
+                    </ul>
+                </ul>
+            </div>
+        </div>
+        <div class="targeta">
+            <div class="titol">:only-of-type</div>
+            <div class="cos">
+                <div>Primer DIV - Tés dos paràgrafs fills
+                    <p>Primer paràgraf</p>
+                    <p>Segon paràgraf</p>
+                </div>
+                <div>Segon DIV - Té un sol fill
+                    <p>Tercer paràgraf</p>
+                </div>
+                <span>Únic SPAN</span>
+                <p>Quart paràgraf</p>
+                <div>Darrer div</div>
+            </div>
+        </div>
+        <div class="targeta">
+            <div class="titol">:empty</div>
+            <div class="cos">
+                <div>Hola, sóc primer DIV
+                    <p>Sóc primer parágraf</p>
+                    <p>Hola, sóc el segon parágraf</p>
+                </div>
+                <div>A continuació, un div buit</div>
+                <div></div>
+                <span>Hola, sóc un SPAN</span>
+                <p>Hola, Soc el ultim parágraf</P>
+                <div>A continuació, un div buit</div>
+                <div></div>
+                <div>Hola, soc ultim DIV</div>
+            </div>
+        </div>
+        <div class="targeta">
+            <div class="titol">Títol</div>
+            <div class="cos">Exemple de pseudoclasses</div>
+        </div>
+        <div class="targeta">
+            <div class="titol">Títol</div>
+            <div class="cos">Exemple de pseudoclasses</div>
+        </div>
+    </main>
+</body>
+</html>
