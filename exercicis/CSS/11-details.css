@@ -1,0 +1,11 @@
+a{
+    background-color: bisque;
+    text-decoration: none;
+    border: 1px solid black;
+    width: 150px;
+    display: inline-block;
+}
+
+details summary::marker{
+    content: none;
+}
