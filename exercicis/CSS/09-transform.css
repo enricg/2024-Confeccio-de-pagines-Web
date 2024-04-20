@@ -1,0 +1,111 @@
+header, footer{
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+}
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+}
+
+.targeta{
+    width: 100%;
+    height: 300px;
+    border: 1px dashed black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.caixa{
+    width: 100px;
+    height: 100px;
+}
+
+img{
+    width: 100%;
+}
+
+.boto{
+    height: 40px;
+    width: 200px;
+    text-align: center;
+    border: 1px solid black;
+    background-color: aqua;
+    ;
+}
+/* Transformacions */
+/* Translate */
+/*
+.none:hover+.targeta .caixa{
+    
+}
+.matrix(n,n,n,n,n,n):hover+.targeta .caixa{
+    
+}
+.matrix3d(n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n):hover+.targeta .caixa{
+    
+}
+*/
+.boto:hover{
+    background-color: brown;
+    cursor: pointer;
+}
+
+.translate:hover ~ .targeta .caixa{
+    transform: translate(50px, 50px);
+}
+
+.translateY:hover ~ .targeta .caixa{
+    transform: translateY(50px);    
+}
+
+.translateZ:hover ~.targeta .caixa{
+    transform: translateZ(50px);
+}
+
+.scaleXY:hover ~ .targeta .caixa{
+    transform: scale(2,2);
+}
+
+.scaleY:hover ~ .targeta .caixa{
+    transform: scaleY(2);    
+}
+
+.scaleZ:hover ~.targeta .caixa{
+    transform: scaleZ(2);
+}
+
+.rotateAngle:hover ~ .targeta .caixa{
+    transform: rotate(25deg);    
+}
+
+.rotate3d:hover ~ .targeta .caixa{
+    transform: rotate3d(30,1,1,-45deg);
+}
+.rotateY:hover ~ .targeta .caixa{
+    transform: rotateY(45deg);
+}
+.rotateZ:hover ~ .targeta .caixa{
+    transform: rotateZ(45deg);
+}
+.skew:hover ~ .targeta .caixa{
+    transform: skew(45deg,45deg);
+}
+.skewX:hover ~ .targeta .caixa{
+    transform: skewX(45deg);
+}
+.skewY:hover ~ .targeta .caixa{
+    transform: skewY(45deg);
+}
+.perspective:hover ~ .targeta .caixa{
+    transform:perspective(100px);
+}
+.initial:hover ~ .targeta .caixa{
+    transform: initial;
+}
+.inherit:hover ~ .targeta .caixa{
+    transform: inherit;
+}
