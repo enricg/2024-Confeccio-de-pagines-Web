@@ -20,15 +20,15 @@
     - [ ] Pseudo-classes: :active / :link / :visited / :hover
 8.  
     1.  Pseudo-classes: 
-        - [ ] targetes amb les :active / :link / :visited / :hover
-        - [ ] :first-child / :last-child
-        - [ ] :first-of-type /:last-of-type
-        - [ ] :nth-child /nth-last-child
-        - [ ] :nth-of-type / :nth-last-of-type
-        - [ ] :only-child
-        - [ ] :only-of-type
-        - [ ] :empty
-        - [ ] :not 
+        - [x] targetes amb les :active / :link / :visited / :hover
+        - [x] :first-child / :last-child
+        - [x] :first-of-type /:last-of-type
+        - [x] :nth-child /nth-last-child
+        - [x] :nth-of-type / :nth-last-of-type
+        - [x] :only-child
+        - [x] :only-of-type
+        - [x] :empty
+        - [x] :not 
     2.  
         1.  Pseudo-classes per a formularis: targetes amb
             - [ ] :focus
@@ -41,7 +41,7 @@
 9.  Caixes amb:
     - [ ] canvi de propietat pseudoclasse :hover
     - [ ] Align-content
-    - [ ] Transform
+    - [x] Transform
 10. Animacions
     - [ ] Pàgina amb caixa amb animació
     - [ ] pàgina amb targetes de pel·lícules que apareixen mitjançant animació
