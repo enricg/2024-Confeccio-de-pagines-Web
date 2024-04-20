@@ -1,0 +1,51 @@
+/* Estils del navegador */
+h1{
+    text-align: center;
+}
+
+.nav {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14pt;
+    display: block;
+    width: 230px;
+}
+
+/* -------------------------------------------------- */
+/* Posicionament/Visualització per defecte de submenú */
+.menu {
+    display: inline;
+}
+
+/* Estil per defecte de cada element dels menús */
+.item {
+    display: block;
+    position: relative;
+    background-color: cadetblue;
+    border-bottom: 2px solid burlywood;
+    border-left: 6px solid burlywood;
+    width: 220px;
+}
+
+/* Al posicionar el cursor a sobre l'element */
+.item:hover {
+    background-color: burlywood;
+    cursor: pointer;
+}
+
+.submenu{
+    position: absolute;
+    top: 0px; /* Visualització al mateix nivell que opció del pare */
+    left: -46px;
+    opacity: 0; /* Ocultem el submenu */
+    /* Propietats de transició */
+    transition-duration: .6s;
+    transition-timing-function: linear;
+    transition-delay: .1s;
+}
+
+/* Quan el cursor SI està a sobre un element, ES VISUALITZA el submenú */
+.itemsub:hover > .submenu {
+    display: block;
+    opacity: 1;
+    left:180px;
+}
