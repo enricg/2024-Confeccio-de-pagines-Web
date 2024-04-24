@@ -1,0 +1,50 @@
+h1{
+    text-align: center;
+}
+
+.lletraEsq{
+    width: 300px;
+    height: 300px;
+    /* 
+    display: flex;
+    flex-direction:column;
+     */
+    /* animation-name: lletres;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-fill-mode: backwards; */
+}
+
+.lletra{
+    width: 60px;
+    height: 60px;
+    background-color: aqua;
+    border: 1px solid black;
+    margin: 2px;
+    align-content: center;
+    text-align: center;
+    text-transform: capitalize;
+    
+    animation-name: caixeta;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+}
+
+@keyframes caixeta{
+    0%{
+        left: 0;
+    }
+    100%{
+        /* left: 400px; */
+        transform: rotate(90deg);
+    }
+}
+
+@keyframes lletres{
+    0%{
+        transform: rotate(-45deg);        
+    }
+    100%{
+        transform: rotate(90deg);
+    }
+}
