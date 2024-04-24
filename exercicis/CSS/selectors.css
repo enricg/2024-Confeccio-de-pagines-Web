@@ -1,0 +1,19 @@
+/* ul{
+    background-color: brown;
+} */
+
+.menu1{
+    color: green;
+}
+
+.menu2{
+    color: rgb(56, 28, 216);
+}
+
+ul li {
+background-color: rgb(230, 214, 214);
+}
+
+div~p{
+    background-color: blueviolet;
+}
