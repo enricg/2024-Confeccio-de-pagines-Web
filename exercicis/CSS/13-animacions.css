@@ -1,44 +1,197 @@
-h1{
-    text-align: center;
+@keyframes desplacamentirotacion {
+    0% {
+        top:0px;
+    }
+    30% {
+        top:150px;
+        border-radius: 50%;
+    }
+    50% {
+        transform: rotate(35deg);
+    }
+    70% {
+        top:250px;
+        transform: rotate(0deg);
+    }
+    100% {
+        top:0px;
+    }
 }
 
-main{
-    width: 100%;
-    height: 500px;
-    border: 1px solid black;
+.container {
+    width: 80%;
+    height: 300px;
+    border: 1px dotted black;
     position: relative;
 }
 
-.caixa{
+.caixa {
+    display: inline-block;
     width: 50px;
     height: 50px;
-    background-color: yellow;
+    border-radius: 0;
     position: absolute;
-    bottom: 0;
-    animation-name: exemple;
-    animation-duration: 20s;
-    animation-timing-function: linear;
+    
 }
 
-.caixa2{
-    bottom: 400px;
-    background-color: green;
-    animation-duration: 10s;
+.vermell {
+    background-color: #ff0000;
+    left: 10px;
+    /* associaciom de animacion con element */
+    animation-name: desplacamentirotacion;
+    animation-duration: 6s;
 }
 
-@keyframes exemple {
-    0%{ left:0;}
-    25%{ 
-        left: 400px;
-        bottom: 200px;
-        background-color: #ff0000;
+.blau {
+    background-color: #0000ff;
+    left: 70px;
+    animation-name: desplacamentirotacion;
+    animation-duration: 6s;
+    animation-delay: 1s;
+}
+
+.groc {
+    background-color: #ffff00;
+    left: 130px;
+    animation-name: desplacamentirotacion;
+    animation-duration: 6s;
+    animation-delay: 2s;
+}
+
+/*
+
+
+/* Titol animado */
+
+@keyframes titol {
+    0% {
+        opacity: 0;
+        color: #ffff00;
     }
-    50%{ transform: scale(2);}
-    75%{ background-color: red;}
+    40% {
+        opacity: 1;
+        font-size: 5em;
+        color: #ff0000;
+    }
+
     100% {
-        transform: scale(1);
-        left:0px;
-        background-color: blue;
-        transform: rotate(45deg);
+        color: black;
+        font-size: 3em;
+        opacity: 1;
     }
 }
+
+@keyframes images {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 900px;
+        opacity: 1;
+    }
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 960px;
+    height: 100px;
+    margin: auto;
+    text-align: center;
+}
+
+.letter {
+    font-family: 'Game Of Squids', Arial, Helvetica, sans-serif;
+    font-size: 3em;
+    font-weight: 700;
+    text-transform: uppercase;
+    opacity: 0;
+    animation-name: titol;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+.sp01 {
+    animation-delay: 0S;
+}
+
+.sp02 {
+    animation-delay: .5S;
+}
+.sp03 {
+    animation-delay: 1S;
+}
+.sp04 {
+    animation-delay: 1.5S;
+}
+.sp05 {
+    animation-delay: 2S;
+}
+.sp06 {
+    animation-delay: 2.5S;
+}
+.sp07 {
+    animation-delay: 3S;
+}
+.sp08 {
+    animation-delay: 3.5S;
+}
+.sp09 {
+    animation-delay: 4S;
+}
+.sp10 {
+    animation-delay: 4.5S;
+}
+.sp11 {
+    animation-delay: 5S;
+}
+.sp12 {
+    animation-delay: 5.5S;
+}
+.sp13 {
+    animation-delay: 6S;
+}
+.sp14 {
+    animation-delay: 6.5S;
+}
+.sp15 {
+    animation-delay: 7S;
+}
+.sp16 {
+    animation-delay: 7.5S;
+}
+.sp17 {
+    animation-delay: 8S;
+}
+.sp18 {
+    animation-delay: 8.5S;
+}
+.sp19 {
+    animation-delay: 9S;
+}
+
+.images {
+    width: 900px;
+    height: 300px;
+    margin: auto;
+    opacity: 0;
+    background-image: url(../images/303-3030448_coding-html-css.jpg);
+    background-size: cover;
+    animation-name: images;
+    animation-duration: 1s;
+    animation-delay: 8s;
+    animation-fill-mode: forwards;
+}
+/* footer */
+
+footer {
+    display: block;
+    height: 40px;
+    background-color: bisque;
+    padding: 10px 30px 10px 30px;
+    border-top: 2px solid goldenrod;
+    margin-top: 60px;
+}
+*/
