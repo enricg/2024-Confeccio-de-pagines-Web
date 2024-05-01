@@ -1,0 +1,84 @@
+/* Atributs títols*/
+:root {
+    --colorTitol: olive;
+    --colorSubtitol: olivedrab;
+    --colorSubsubtitol: yellowgreen;
+}
+
+h1,
+h2,
+h3 {
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+h1 {
+    background-color: var(--colorTitol)
+}
+
+h2 {
+    background-color: var(--colorSubtitol);
+}
+
+h3 {
+    background-color: var(--colorSubsubtitol);
+}
+
+
+/* cm */
+.cmh1 {
+    font-size: 1.5cm;
+}
+
+.cmh2 {
+    font-size: 1cm;
+}
+
+.cm {
+    font-size: 0.5cm;
+    line-height: 1cm;
+}
+
+/* mm */
+.mmh1 {
+    font-size: 15mm;
+}
+
+.mmh2 {
+    font-size: 10mm;
+}
+
+.mm {
+    font-size: 5mm;
+    line-height: 10mm;
+}
+
+/* polzades */
+.inh1 {
+    font-size: 1in;
+}
+
+.inh2 {
+    font-size: 0.5in;
+}
+
+.inp {
+    font-size: 0.2in;
+    line-height: 0.5in;
+}
+
+/* Píxels */
+.pxh1 {
+    font-size: 50px;
+}
+
+.pxh2 {
+    font-size: 30px;
+}
+
+.px {
+    font-size: 15px;
+    line-height: 20px;
+}

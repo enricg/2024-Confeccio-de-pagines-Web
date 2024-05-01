@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercici unitats relatives</title>
+    <link rel="stylesheet" href="./CSS/15-unitatsRelatives.css">
+</head>
+
+<body>
+    <h2>Introducció</h2>
+    Les unitats de longitud relativa especifiquen una longitud relativa a una altra propietat de longitud. <br>
+    Les unitats de longitud relativa escalen millor entre dispositius de diferents mides.
+    <h2>EM: En relació a la mida de la font de l'element (2em significa 2 vegades la mida de la font actual)</h2>
+    <p class="pEM">Aquest paràgraf té una alçada de línia calculada de: 2x16px = 32px.</p>
+    <div class="divEM">La mida de la font de l'element div s'estableix en 30 píxels. <span class="spanEM">L'element span
+            dins de l'element div té una mida de font de 0,5 em, que equival a 0,5 x 30 = 15 px</span>.</div>
+    <h2>REM: Relatiu a la mida del tipus de lletra de l'element arrel</h2>
+    <p>The font-size of this document is 16px.</p>
+    <div class="divPareREM">
+        La mida de la font d'aquest element div és 2rem, que es tradueix en 2 x la mida de la font del navegador.
+        <div class="divREM">La mida del tipus de lletra d'aquest element div és 3rem. També mostra que no hereta la mida
+            del tipus de lletra del seu element pare.</div>
+    </div>
+    <p>La unitat rem estableix la mida del tipus de lletra en relació amb la mida del tipus de lletra base del navegador
+        i no heretarà dels seus pares.</p>
+    <h2>%: Relatiu a l'element pare</h2>
+    <p>La mida del tipus de lletra d'aquest document és de 16 píxels.</p>
+    <div class="divPercent">La mida del tipus de lletra d'aquest element div és del 150%.</div>
+    <p>La unitat % estableix la mida del tipus de lletra en relació amb la mida del tipus de lletra actual.</p>
+    <h2>vw: Relatiu a l'1% de l'amplada de la pantalla</h2>
+    <p class="pvw">Hola</p>
+    <p>Canvia la mida de l'amplada de la finestra del navegador per veure com canvia la mida del tipus de lletra de h1.
+    </p>
+    <p>1vw = 1% de l'amplada de la finestra gràfica.</p>
+    <h2>vh: Relatiu a l'1% de l'alçada de la pantalla</h2>
+    <p class="pvh">Hola</p>
+    <p>Canvia la mida de l'alçada de la finestra del navegador per veure com canvia la mida del tipus de lletra de h1.
+    </p>
+    <p>1vh = 1% de l'alçada de la vista.</p>
+</body>
+
+</html>
