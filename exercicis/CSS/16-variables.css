@@ -1,0 +1,34 @@
+
+/* Definició de variables */
+:root {
+    --colorFons:black;
+    --colorLletraFonsObscur:white;
+    --colorClar:yellow;
+    --midaLletra:40px;
+    --dimCaixa:100px;
+    --justificacio:space-around;
+}
+
+/* Capçalera i peu de pàgina amb colors definits a les variables */
+header, footer{
+    text-align: center;
+    background-color: var(--colorFons);
+    color: var(--colorLletraFonsObscur);
+}
+
+/* Mida decaixa definida amb variable */
+.caixa{
+    height: var(--dimCaixa);
+    width: var(--dimCaixa);
+    background-color: var(--colorClar);
+    font-size: var(--midaLletra);
+    border: 1px solid black;
+    margin: 10px;
+}
+
+/* Justificació definida amb variable */
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: var(--justificacio);
+}
