@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemple de controls de formulari</title>
+    <link rel="stylesheet" href="./CSS/17-formularis.css">
+</head>
+
+<body>
+    <h1>Exemple de controls de formulari</h1>
+    <hr>
+    <div class="container">
+        <div class="targeta">
+            <div class="titol">
+                <h3>button</h3>
+            </div>
+            <div class="exemple exemple1">
+                <input type="button" id="boto" value="botó">
+            </div>
+        </div>
+
+        <div class="targeta">
+            <div class="titol">
+                <h3>Checkbox</h3>
+            </div>
+            <div class="exemple">
+                Seleccionar fruites preferides
+                <ul>
+                    <li><input type="checkbox" name="checkbox" id="checkbox1"><label for="checkbox1">Pomes</label></li>
+                    <li><input type="checkbox" name="checkbox" id="checkbox2"><label for="checkbox2">Peres</label></li>
+                    <li><input type="checkbox" name="checkbox" id="checkbox3"><label for="checkbox3">Meló</label></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="targeta">
+            <div class="titol">
+                <h3>Color</h3>
+            </div>
+            <div class="exemple">
+                <label for="color">Tria el teu color preferit:</label><br>
+                <input type="color" name="color" id="color">
+            </div>
+        </div>
+        <div class="targeta">
+            <div class="titol">
+                <h3>Date</h3>
+            </div>
+            <div class="exemple">
+                <label for="date">Introdueix una data:</label><br>
+                <input type="date" name="Date" id="date" min="2006-01-13">
+            </div>
+        </div>
+
+        <div class="targeta">
+            <div class="titol">
+                <h3>Date-time local</h3>
+            </div>
+            <div class="exemple">
+                <label for="datetime">Introdueix data i hora:</label><br>
+                <input type="datetime-local" id="datetime" name="datetime">
+            </div>
+        </div>
+        <div class="targeta">
+            <div class="titol">
+                <h3>email</h3>
+            </div>
+            <div class="exemple">
+                <label for="email">Introdueix el teu correu electrònic:</label><br>
+                <input type="email" id="email" name="email">
+            </div>
+        </div>
+        <div class="targeta">
+            <div class="titol">
+                <h3>File</h3>
+            </div>
+            <div class="exemple">
+                <label for="File">Seleccionar l'arxiu:</label><br>
+                <input type="file" id="file" name="file">
+            </div>
+        </div>
+        <div class="targeta">
+            <div class="titol">
+                <h3>Hidden</h3>
+            </div>
+            <div class="exemple">
+                <label for="hidden">Aquí hi ha un input hidden</label>
+                <input type="hidden" id="hidden" name="hidden" value="formComprador">
+            </div>
+        </div>
+        <div class="targeta">
+            <div class="titol">
+                <h3>Image</h3>
+            </div>
+            <div class="exemple">
+                <input type="image" id="image" name="image" src="./imatges/chavo.jpg" alt="chavo" width="100px"
+                    height="100px">
+            </div>
+        </div>
+        <div class="targeta">
+            <div class="titol">
+                <h3>Month</h3>
+            </div>
+            <div class="exemple">
+                <label for="Month">Introdueix el mes:</label>
+                <input type="month" id="month" name="month">
+            </div>
+        </div>
+        <div class="targeta">
+            <div class="titol">
+                <h3>Number</h3>
+            </div>
+            <div class="exemple">
+                <label for="Number">Introdueix un nombre positiu i menor a 50:</label><br>
+                <input type="number" name="number" id="number" min="0" max="50" step="3" value="25">
+            </div>
+        </div>
+        <div class="targeta">
+            <div class="titol">
+                <h3>Password</h3>
+            </div>
+            <div class="exemple">
+                <label for="Password">Introdueix una contrasenya:</label><br>
+                <input type="password" name="password" id="password" placeholder="Ingresa la contrasenya"
+                    pattern="[5-8c-gH-S]{4,6}">
+            </div>
+        </div>
+        <div class="targeta">
+            <div class="titol">
+                <h3>Radio</h3>
+            </div>
+            <div class="exemple">
+                <label for="Radio">Quina fruita t'agrada més</label><br>
+                <fieldset>
+                    <legend>Fruites</legend>
+                    <input type="radio" id="opcio1" name="fruites"><label for="opcio1">Peres</label>
+                    <input type="radio" id="opcio2" name="fruites"><label for="opcio2">Pomes</label>
+                    <input type="radio" id="opcio3" name="fruites"><label for="opcio3">Plàtans</label>
+                </fieldset>
+                <br>
+                <label for="Radio">Quin esport t'agrada més</label><br>
+                <fieldset>
+                    <legend>Esports</legend>
+                    <input type="radio" id="opcio4" name="esports"><label for="opcio4">Futbol</label>
+                    <input type="radio" id="opcio5" name="esports"><label for="opcio5">Bàsket</label>
+                    <input type="radio" id="opcio6" name="esports"><label for="opcio6">Hockey</label>
+                </fieldset>
+            </div>
+        </div>
+
+        <div class="targeta">
+            <div class="titol">
+                <h3>Range</h3>
+            </div>
+            <div class="exemple">
+                <label for="range">Introdueix o selecciona un valor entre 0 i 100:</label><br>
+                <input type="range" id="range" name="range" min="0" max="100" value="20" step="10">
+            </div>
+        </div>
+        <div class="targeta">
+            <div class="titol">
+                <h3>Reset</h3>
+            </div>
+            <div class="exemple">
+                <form action="#">
+                    <label for="reset">Botó que deixa el contingut dels inputs al seu valor inicial.</label><hr>
+                    <label for="nomAuxiliar">Nom:</label><br>
+                    <input type="text" id="nomAuxiliar" name="nomAuxiliar" value="Professor"><br>
+                    <input type="reset" value="reset"><br>
+                </form>
+            </div>
+        </div>
+        <div class="targeta">
+            <div class="titol">
+                <h3>Search</h3>
+            </div>
+            <div class="exemple">
+                <label for="Search">Search:</label><br>
+                <input type="search" id="search" name="search">
+            </div>
+        </div>
+        <div class="targeta">
+            <div class="titol">
+                <h3>Submit</h3>
+            </div>
+            <div class="exemple">
+                <form action="https://www.google.com" target="_blank">
+                    <label for="submit">Botó per realitzar una acció</label><br>
+                    Fes click per obrir la pàgina de Google <br>
+                    <input type="submit" id="submit" value="Enviar">
+                </form>
+            </div>
+        </div>
+        <div class="targeta">
+            <div class="titol">
+                <h3>tel</h3>
+            </div>
+            <div class="exemple">
+                <label for="tel">Introdueix un nombre de telèfon:</label><br>
+                <input type="tel" name="tel" id="tel" pattern="[0-9]{3}-[0-9]{4}" placeholder="123-4567">
+            </div>
+        </div>
+        <div class="targeta">
+            <div class="titol">
+                <h3>Text</h3>
+            </div>
+            <div class="exemple">
+                <label for="text">Introdueix un text qualsevol:</label><br>
+                <input type="text" name="text" id="text" max="10">
+            </div>
+        </div>
+        <div class="targeta">
+            <div class="titol">
+                <h3>Time</h3>
+            </div>
+            <div class="exemple">
+                <label for="time">Introdueix l'hora</label>
+                <input type="time" name="time" id="time">
+            </div>
+        </div>
+        <div class="targeta">
+            <div class="titol">
+                <h3>URL</h3>
+            </div>
+            <div class="exemple">
+                <form action="#">
+                    <label for="URL">Introdueix una direcció de pàgina web:</label><br>
+                    <input type="url" name="URL" id="url">
+                </form>
+            </div>
+        </div>
+
+        <div class="targeta">
+            <div class="titol">
+                <h3>Week</h3>
+            </div>
+            <div class="exemple">
+                <label for="Week">Introdueix la setmana:</label><br>
+                <input type="week" id="week" name="week">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
