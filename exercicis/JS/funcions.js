@@ -1,3 +1,8 @@
+// funció que treu un missatge
+function missatgeBenvinguda(){
+  alert('Bon dia');
+}
+
 // funció per reutilitzar el codi
 function includeHTML() {
   var z, i, elmnt, file, xhttp;

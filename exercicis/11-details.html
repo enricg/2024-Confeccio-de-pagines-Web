@@ -4,11 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exemple de details-summary</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="./CSS/11-details.css">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
-    <header>Exemple d'etiqueta Details i Summary</header>
+    <div class="grid-container">
+        <div class="header">Responsive Grid Layout</div>
+        <div class="aside">
+            <a href="#" class="menu-item">Inici</a>
+            <a href="#" class="menu-item">Qui som</a>
+            <details>
+                <summary class="menu-item">Serveis<i class="fas fa-plus fa-menu-item"></i></summary>
+                <a href="#" class="submenu-item">Submenu Item 01</a>
+                <a href="#" class="submenu-item">Submenu Item 01</a>
+                <a href="#" class="submenu-item">Submenu Item 01</a>
+            </details>
+            <details>
+                <summary class="menu-item">Formació<i class="fas fa-plus fa-menu-item"></i></summary>
+                <a href="#" class="submenu-item">Submenu Item 01</a>
+                <a href="#" class="submenu-item">Submenu Item 01</a>
+                <a href="#" class="submenu-item">Submenu Item 01</a>
+            </details>
+            <a href="#" class="menu-item">Noticies</a>
+            <a href="#" class="menu-item">Contactes</a>
+        </div>
+        <div class="main">Principal
+            <p>Lorem ipsum. .</p>
+        </div>
+        <div class="footer"> &copy; 12 de mayo de 2023. Desarrollado por Ihor Frolov. <br> Todos los derecos son reservados.</div>
+    </div>
+    <!-- <header>Exemple d'etiqueta Details i Summary</header>
     <hr>
     <details>
         <summary>UF0302</summary>
@@ -28,6 +54,6 @@
             <a href="">Opció a</a><br><a href="">Opció b</a><br><a href="">Opció c</a><br><a href="">Opció d</a>
         </details>
         <a href="#">Opció B</a>
-    </details>
+    </details> -->
 </body>
 </html>
