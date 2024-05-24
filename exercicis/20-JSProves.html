@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proves</title>
+</head>
+<body>
+    <h1>Exercici de tipus de variables i constants</h1>
+    <hr>
+    <h2>Tipus constant</h2>
+    <script>
+        // Definició de constant
+        const nom ="Jordi";
+        document.write("Ara mostro el valor de la constant <b>nom</b>: " + nom);
+    </script>
+    <h2>Tipus variable enters</h2>
+    <script>
+        /*
+        // Primer exemple, afegir una miqueta de codi a la pàgina
+        document.write('Hola <div style="width:50px; height:50px; background-color:yellow;">bon</div> dia');
+        */
+
+       // Tipus enters
+       enter=5; // assignació de valor 5 a enter
+       document.write("El valor de la variable <b>enter</b> és: "+ enter);
+       enter=7; // assignació de valor 7 a enter
+       document.write("<br>El nou valor de la variable <b>enter</b> és: "+ enter);
+       enter=enter+1; // incrementem unitat a variable enter
+       document.write("<br>Ara el valor de la variable <b>enter</b> és: "+ enter);
+       enter++; // enter=enter+1;
+       document.write("<br>Ara hem incrementat el valor de la variable <b>enter</b>, que és: "+ enter);
+       enter+=3; // x=x+3;
+       document.write("<br>El valor d'<b>enter</b> és ara: "+ enter);
+       enter*=2; // x=x*2;
+       document.write("<br>Multiplico el valor de la variable <b>enter</b> per 2: "+ enter);
+       enter**=2; // x=x**2;
+       document.write("<br>Elevem el valor de la variable <b>enter</b> a: "+ enter);
+       enter="Hola crayola"; // era una variable de tipus enter, i no ens ha posat cap problema per assignar-li un valro de text
+       document.write("<br>El valor d'<b>enter</b> és: " + enter);
+       // Tipus
+
+    </script>
+    <h2>Tipus decimal</h2>
+    <script>
+        varDecimal1=1.25;
+        varDecimal2=2.55;
+        varDecimalResultat=0;
+        document.write("El valor d'varDecimal és: " + varDecimal1);
+        varDecimalResultat=varDecimal1+varDecimal2;
+        document.write("<br>El valor d'varDecimalResultat és: " + varDecimalResultat);
+        varDecimalResultat=enter+varDecimal1;
+        document.write("<br>El valor d'varDecimalResultat és: " + varDecimalResultat);
+        varDecimal1="3.14";
+        varDecimal2=5.25;
+        varDecimalResultat=varDecimal1+varDecimal2;
+        document.write("<br>El valor d'varDecimalResultat és: " + varDecimalResultat);
+        varDecimal1=3.14;
+        varDecimalResultat=5+varDecimal1;
+        document.write("<br>El valor d'varDecimalResultat és: " + varDecimalResultat);
+        document.write("<br>El valor d'varDecimal1 és: " + varDecimal1);
+        varDecimal1++;
+        document.write("<br>El valor d'varDecimal1 és: " + varDecimal1);
+        varDecimal1++;
+        document.write("<br>El valor d'varDecimal1 és: " + varDecimal1);
+        varDecimal1-=10;
+        document.write("<br>El valor d'varDecimal1 és: " + varDecimal1);
+    </script>
+    <h2>Tipus string</h2>
+    <script>
+        cognom = "Rodríguez";
+        document.write("<br>El valor de la variable cognom és: " + cognom);
+        cognom=cognom+" Pérez";
+        document.write("<br>El valor de cognom és: " + cognom);
+        cognom+=" de todos los Santos";
+        //cognom=cognom+" de todos los Santos";
+        document.write("<br>El valor de cognom és: " + cognom);
+        // variable amb el $;
+        $hola ="Aquesta variable conté un text";
+        document.write("<br>El valor de la variable $ és: "+ $hola);
+        cadena = 'Això és una cadena';
+        document.write("<br>El valor de la variable 'Cadena' val: "+cadena+"<br><br>");
+        document.write(cadena);
+    </script>
+    <h2>Tipus booleans</h2>
+    <script>
+        Vertader=true;
+        Fals=false;
+        document.write("El valor de cert és: "+ Vertader +"<br>");
+        document.write(Vertader+Fals +"<br>");
+        document.write(Fals+Fals +"<br>");
+        document.write(Vertader*Vertader +"<br>");
+        document.write(Vertader*Fals +"<br>");
+        document.write(Vertader+Fals +"<br>");
+        document.write(Vertader+4 +"<br>"); // Suma
+        document.write(Vertader+"Hola crayola" +"<br>"); // Suma
+    </script>
+    <h2>Tipus arrays</h2>
+    <script>
+        alumnes = ["Danny","Laura","Jorge","Mina", "Dani"];
+        document.write("Els alumnes del divendres són:"+ alumnes+"<br>");
+        document.write("El primer alumne de la llista és: " + alumnes[0]+ ", "+alumnes[2]+"<br>");
+
+        alumnesEdat = [21,18,27,15,19];
+        alumnesEdatText =          ["21","18","27","15","19"];
+        document.write(alumnesEdat);
+        document.write("<br>");
+        document.write(alumnesEdatText);
+        document.write("<br>");
+        document.write(alumnesEdat[0]+alumnesEdat[1]);
+        document.write("<br>");
+        document.write(alumnesEdatText[0]+alumnesEdatText[1]);
+        document.write("<br>");
+        document.write(alumnesEdat[0]+alumnesEdatText[1]);
+        document.write("<br>");
+
+        amics = [["Danny",18,180,"Real Madrid"],["Laura",23,165,"Disenyadora Gràfica"],["Jorge",28,170,"Periodista"],["Mina",22,172,"Traductora"],["Dani",21,174,"Hacker"]];
+
+        document.write(amics);
+        document.write("<br>");
+        document.write(amics[0],amics[3]);
+        document.write("<br>");
+
+        dani =["Dani",175,75,21,"Programació"];
+        enric= [8,13,105,"Nesflis","Parlar","Blau"];
+        escollits =[dani,enric];
+        document.write(escollits);
+        dani[1]=180;
+        document.write("<br>");
+        document.write(dani);
+        frase = dani.toString();
+        document.write("<br>");
+        document.write(frase[15]);
+        dani[1]= new Date(Date.now());
+        document.write("<br>");
+        document.write(dani[1]);
+        document.write("<br>");
+
+        cotxes = ["SEAT","Talbot", "Renault", "Mercedes", "Audi", "Hyundai"];
+
+        document.write("La lista conté els següents elements:<br> " + amics +"<br>");
+        document.write("La llista amics té " + amics.length + " amics<br>");
+
+        document.write("La llista de cotxes és: <br>" + cotxes +"<br>");
+        document.write(cotxes.length);
+        document.write("<br>");
+        document.write(cotxes);
+        document.write("<br>");
+        // cotxes.sort();
+        document.write(cotxes.sort().reverse());
+
+
+
+    </script>
+    <div style="height: 200px;"></div>
+
+</body>
+</html>
