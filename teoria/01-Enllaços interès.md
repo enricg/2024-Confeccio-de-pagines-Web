@@ -5,11 +5,31 @@
 [Propietats abreviades - Shorthands](https://developer.mozilla.org/es/docs/Web/CSS/Shorthand_properties)
 
 # Gamificació
-[CSS Dinner](https://flukeout.github.io/) - Pràctica de selectors
+## CSS
+[CSS Diner](https://flukeout.github.io/) - Pràctica de selectors
 [Flexbox Defense](http://www.flexboxdefense.com/) - Pràctica de display flex
 [CSS Garden](https://cssgridgarden.com/) - Pràctica de display Grid
 [CSS Battle](https://cssbattle.dev/) - Pàgina que ens proposa diferents reptes a superar mitjançant estils CSS.
 [Codepip](https://codepip.com/games/) - Pàgina per practicar, mitjançant jocs, HTML, CSS, i JS
+[Flexbox Zombies](https://mastery.games/flexboxzombies/)
+[Knights of the Flexbox Table](https://knightsoftheflexboxtable.com/)
+[Flex Box Adventure](https://codingfantasy.com/games/flexboxadventure)
+[Grid Attack](https://codingfantasy.com/games/css-grid-attack)
+[Flexbox Froggy](https://flexboxfroggy.com/#es)
+[Guess CSS!](https://www.guess-css.app/)
+[CSS Speedrun](https://css-speedrun.netlify.app/)
+[CSS Challenges](https://css-challenges.com/)
+## JS
+[CodeCombat](https://codecombat.com/play/level/dungeons-of-kithgard?) - Aventura RPG per codificar
+[Codewars](https://www.codewars.com/) - Batalla d'algorismes
+[CodinGame](https://www.codingame.com/ide/puzzle/onboarding)
+[Screeps](https://screeps.com/a/#!/sim/tutorial/1)
+[Untrusted](https://alexnisnevich.github.io/untrusted/)
+[Elevator Saga](https://play.elevatorsaga.com/)
+[JSRobot](https://lab.reaal.me/jsrobot/#level=1&language=en)
+[Crunchzilla](https://www.crunchzilla.com/code-maven)
+[JSDares](https://jsdares.com/)
+[CheckIO](https://js.checkio.org/)
 
 # Generació de texts
 [LOREM.cat](https://www.lorem.cat/)
@@ -40,3 +60,4 @@
 [Undraw. Col·lecció d'imatges SVG](https://undraw.co/illustrations)
 [Blobmaker](https://www.blobmaker.app/)
 [Free Frontend](https://freefrontend.com/)
+[Pseudoflow](https://online.pseudoflow.app/) - Programa i automàticament genera diagrama de flux
