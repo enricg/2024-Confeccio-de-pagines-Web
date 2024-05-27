@@ -30,6 +30,10 @@
 - 15-unitatsAbsolutes.html
 - 15-unitatsRelatives.html
 - 16-variables.html
+- 17-formularis.html
+- 18-reutilitzacioCodi.html
+- 20-JSProves.html
+- 21-inicialJS.html
 ## Altres
 - 00-Estructura bàsica de pàgina Web
 - 01-Enllaços d'interès
