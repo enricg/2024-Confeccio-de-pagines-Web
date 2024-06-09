@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercici Let i Var</title>
+</head>
+<body>
+    <h2>Exercici per provar l'scope de declaració amb Let i Var</h2>
+    <hr>
+    <script>
+        let variableB = 5; // variable global
+        
+        function suma(a,b){
+            let variableA = a; // variable local
+            let variableB = b
+            document.write("Valor de variableB dins de la funció: " + variableB +"<br>");
+            //return variableA+b;
+            return variableA+variableB;
+        }
+
+        let resultat = suma(3,8);
+        document.write("El resultat a és: " + resultat + "<br>");
+        document.write("El valor de la variableB fora de la funció és: " + variableB + "<br>");
+        document.write("El valor de la variableA és: " + variableA + "<br>");
+        
+    </script>
+</body>
+</html>

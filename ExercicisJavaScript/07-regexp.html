@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicis d'expressions regular</title>
+</head>
+<body>
+    <h2>Expressions regulars</h2>
+    <hr>
+    <script>
+        let laMevaExpressio =/blau/; // conté la paraula
+        let cadena1="La casa és de color blau";
+        let cadena2="La casa és de color Blau";
+        let cadena3="blaus. M'he caigut i me n'he fet molts a les cames";
+        let cadena4="La bicicleta té tons blavets";
+        let cadena5="Blaus. M'he caigut i me n'he fet molts a les cames";
+        
+        // console.log("Expressió /blau/");
+        // console.log(cadena1 + " ---> "+laMevaExpressio.test(cadena1)); // true
+        // console.log(cadena2 + " ---> "+laMevaExpressio.test(cadena2)); // true
+        // console.log(cadena3 + " ---> "+laMevaExpressio.test(cadena3)); // false
+        // console.log(cadena4 + " ---> "+laMevaExpressio.test(cadena4)); // false
+        // console.log(cadena5 + " ---> "+laMevaExpressio.test(cadena5)); // false
+        // console.log("Expressió /^blau/");
+        // laMevaExpressio=/^blau/; // conté la paraula a l'inici
+        // console.log(cadena1 + " ---> "+laMevaExpressio.test(cadena1));
+        // console.log(cadena2 + " ---> "+laMevaExpressio.test(cadena2));
+        // console.log(cadena3 + " ---> "+laMevaExpressio.test(cadena3));
+        // console.log(cadena4 + " ---> "+laMevaExpressio.test(cadena4)); // false
+        // console.log(cadena5 + " ---> "+laMevaExpressio.test(cadena5)); // false
+        // console.log("Expressió /[bB]lau/");
+        // laMevaExpressio=/[bB]lau/; // conté la paraula a l'inici
+        // console.log(cadena1 + " ---> "+laMevaExpressio.test(cadena1));
+        // console.log(cadena2 + " ---> "+laMevaExpressio.test(cadena2));
+        // console.log(cadena3 + " ---> "+laMevaExpressio.test(cadena3));
+        // console.log(cadena4 + " ---> "+laMevaExpressio.test(cadena4)); // false
+        // console.log(cadena5 + " ---> "+laMevaExpressio.test(cadena5)); // false
+        
+        // console.log("Expressió /[bB]lau$/");
+        // laMevaExpressio=/[bB]lau$/; // conté la paraula a l'inici
+        // console.log(cadena1 + " ---> "+laMevaExpressio.test(cadena1));
+        // console.log(cadena2 + " ---> "+laMevaExpressio.test(cadena2));
+        // console.log(cadena3 + " ---> "+laMevaExpressio.test(cadena3));
+        // console.log(cadena4 + " ---> "+laMevaExpressio.test(cadena4)); // false
+        // console.log(cadena5 + " ---> "+laMevaExpressio.test(cadena5)); // false
+
+        // console.log("Expressió /\b[bB]lau\b/");
+        // laMevaExpressio=/\b[bB]lau\b/; // conté la paraula amb espais a inici i fi d'aquesta
+        // console.log(cadena1 + " ---> "+laMevaExpressio.test(cadena1));
+        // console.log(cadena2 + " ---> "+laMevaExpressio.test(cadena2));
+        // console.log(cadena3 + " ---> "+laMevaExpressio.test(cadena3));
+        // console.log(cadena4 + " ---> "+laMevaExpressio.test(cadena4)); // false
+        // console.log(cadena5 + " ---> "+laMevaExpressio.test(cadena5)); // false
+
+        // console.log("Expressió /\B[bB]lau\B/");
+        // laMevaExpressio=/\B[bB]lau\B/; // conté la paraula dins d'una altra paraula
+        // console.log(cadena1 + " ---> "+laMevaExpressio.test(cadena1));
+        // console.log(cadena2 + " ---> "+laMevaExpressio.test(cadena2));
+        // console.log(cadena3 + " ---> "+laMevaExpressio.test(cadena3));
+        // console.log(cadena4 + " ---> "+laMevaExpressio.test(cadena4)); // false
+        // console.log(cadena5 + " ---> "+laMevaExpressio.test(cadena5)); // false
+        
+        // console.log("Expressió /\w[bB]lau\w/");
+        // laMevaExpressio=/\w[bB]lau\w/; // conté la paraula dins d'una altra paraula
+        // console.log(cadena1 + " ---> "+laMevaExpressio.test(cadena1));
+        // console.log(cadena2 + " ---> "+laMevaExpressio.test(cadena2));
+        // console.log(cadena3 + " ---> "+laMevaExpressio.test(cadena3));
+        // console.log(cadena4 + " ---> "+laMevaExpressio.test(cadena4)); // false
+        // console.log(cadena5 + " ---> "+laMevaExpressio.test(cadena5)); // false
+        
+        // cadena3=" blau M'he caigut i me n'he fet molts a les cames";
+        // console.log("Expressió /\W[bB]lau\W/");
+        // laMevaExpressio=/\W[bB]lau\W/; // conté la paraula dins d'una altra paraula
+        // console.log(cadena1 + " ---> "+laMevaExpressio.test(cadena1));
+        // console.log(cadena2 + " ---> "+laMevaExpressio.test(cadena2));
+        // console.log(cadena3 + " ---> "+laMevaExpressio.test(cadena3));
+        // console.log(cadena4 + " ---> "+laMevaExpressio.test(cadena4)); // false
+        // console.log(cadena5 + " ---> "+laMevaExpressio.test(cadena5)); // false
+        
+        // console.log("Expressió /\W[bB]lau\W/");
+        // laMevaExpressio=/\W[bB]lau\W/; // conté la paraula dins d'una altra paraula
+        // console.log(cadena1 + " ---> "+laMevaExpressio.test(cadena1));
+        // console.log(cadena2 + " ---> "+laMevaExpressio.test(cadena2));
+        // console.log(cadena3 + " ---> "+laMevaExpressio.test(cadena3));
+        // console.log(cadena4 + " ---> "+laMevaExpressio.test(cadena4)); // false
+        // console.log(cadena5 + " ---> "+laMevaExpressio.test(cadena5)); // false
+        
+        // cadena3=" blau M'he caigut i me n'he fet molts a les cames";
+        // console.log("Expressió /\s[bB]lau/");
+        // laMevaExpressio=/\s\s[bB]lau/; // conté la paraula dins d'una altra paraula
+        // console.log(cadena1  + " ---> "+laMevaExpressio.test(cadena1));
+        // console.log(cadena2 + " ---> "+laMevaExpressio.test(cadena2));
+        // console.log(cadena3 + " ---> "+laMevaExpressio.test(cadena3));
+        // console.log(cadena4 + " ---> "+laMevaExpressio.test(cadena4)); // false
+        // console.log(cadena5 + " ---> "+laMevaExpressio.test(cadena5)); // false
+        
+        // cadena3=" blau M'he caigut i me n'he fet molts a les cames";
+        // console.log("Expressió /\s[bB]lau/");
+        // laMevaExpressio=/\s\s[bB]lau/; // conté la paraula dins d'una altra paraula
+        // console.log(cadena1  + " ---> "+laMevaExpressio.test(cadena1));
+        // console.log(cadena2 + " ---> "+laMevaExpressio.test(cadena2));
+        // console.log(cadena3 + " ---> "+laMevaExpressio.test(cadena3));
+        // console.log(cadena4 + " ---> "+laMevaExpressio.test(cadena4)); // false
+        // console.log(cadena5 + " ---> "+laMevaExpressio.test(cadena5)); // false
+
+        // cadena6=" ^blau M'he caigut i me n'he fet molts a les cames";
+        // console.log("Expressió /\^[bB]lau/");
+        // laMevaExpressio=/\^[bB]lau/; // conté la paraula dins d'una altra paraula
+        // console.log(cadena6  + " ---> "+laMevaExpressio.test(cadena6));
+
+        // cadena7="Barcelona";
+        // laMevaExpressio=/Bar[^cs]elona/; // conté la paraula dins d'una altra paraula
+        // frase=prompt("Escriu la ciutat Bronxelona?");
+        // console.log("L'expressió és: " + "/Bar[^cs]elona/");
+        // console.log("La frase és: " + frase + " ---> " + laMevaExpressio.test(frase));
+
+        //cadena7 ;
+        laMevaExpressio=/Bar[csçz]*elona/; // conté la paraula dins d'una altra paraula
+        frase=prompt("Escriu la ciutat Barcelona?");
+        console.log("L'expressió és: " + "/Bar[csçz]*   elona/");
+        console.log("La frase és: " + frase + " ---> " + laMevaExpressio.test(frase));
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proves d'Objectes i classes</title>
+</head>
+<body>
+    <h1>Exemples d'objectes i classes</h1>
+    <hr>
+    <!-- <script>
+        const cotxe = {
+            marca: "Fiat",
+            model: "500",
+            pes: 1000,
+            color: "Blanc",
+            totesPropietats : function(){
+                return this.marca + ", " + this.model + ", " + this.pes + ", " + this.color;
+            }
+        }
+        document.write("El cotxe original creat és:<br>" + cotxe.totesPropietats());
+    </script>
+    <hr>
+    <script>
+        // const enric = cotxe;
+        // document.write("El cotxe Enric creat és:<br>" + enric.totesPropietats());
+
+        // const moto = {
+        //     marca: "Suzuki",
+        //     model: "turbo",
+        //     pes: 300,
+        //     color: "Blau",
+        //     totesPropietats : function(){
+        //         return this.marca + ", " + this.model + ", " + this.pes + ", " + this.color;
+        //     }
+        // }
+
+        // document.write("<hr>La moto creada és:<br>" + moto.totesPropietats());
+        //enric = moto;
+        //document.write("<hr>La moto Enric és:<br>" + enric.totesPropietats());
+</script>
+<p id="demo"></p>
+<p id="enric"></p>
+
+<script>
+// Create an Object
+const person = {
+  name: "John",
+  age: 30,
+  city: "New York",
+  complet:function(){return this.name+this.age+this.city;}
+};
+
+// Display Object
+document.getElementById("demo").innerHTML = person;
+document.getElementById("enric").innerHTML = person.complet();
+</script> -->
+<script>
+    llista = ["Vero","DD","Billy","Jorge","Mina","Daniel"];
+   // i=0;
+    // while(i<llista.length){
+    //     console.log(llista[i]);
+    //     i++;
+    // }
+
+    for(element in llista){
+        console.log(llista[element]);
+    }
+
+
+</script>
+</body>
+</html>

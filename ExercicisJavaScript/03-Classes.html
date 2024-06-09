@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classes</title>
+</head>
+<body>
+    <h1>Exemplificar Classes i Objectes</h1>
+    <hr>
+    <script>
+        class cotxe{            
+            constructor(propietari,marca,any){
+                this.propietari=propietari;
+                this.marca=marca;
+                this.any=any;
+                this.color="blanc";
+            }
+            antiguitat(){
+                const date = new Date();
+                return date.getFullYear() - this.any;
+            }   
+        }
+        
+        const cotxeEnric = new cotxe("Enric","Nissan",2000);
+        document.write("En " + cotxeEnric.propietari + " té un: " + cotxeEnric.marca + "<br>de l'any: " + cotxeEnric.any + ". Té "+ cotxeEnric.antiguitat() + " anys d'antiguitat<hr>");
+        const cotxeDanny = new cotxe("Danny","Talbot",1990);
+        document.write("En " + cotxeDanny.propietari + " té un: " + cotxeDanny.marca + "<br>de l'any: " + cotxeDanny.any + ". Té "+ cotxeDanny.antiguitat() + " anys d'antiguitat<hr>");
+        const cotxeNoOne = new cotxe("Ningú","Patito",2005);
+        document.write("En " + cotxeNoOne.propietari + " té un: " + cotxeNoOne.marca + "<br>de l'any: " + cotxeNoOne.any + ". Té "+ cotxeNoOne.antiguitat() + " anys d'antiguitat<hr>");
+        
+    </script>
+</body>
+</html>
