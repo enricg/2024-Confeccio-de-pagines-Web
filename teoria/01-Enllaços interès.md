@@ -30,6 +30,12 @@
 [Crunchzilla](https://www.crunchzilla.com/code-maven)
 [JSDares](https://jsdares.com/)
 [CheckIO](https://js.checkio.org/)
+## RegExp (Expressions Regulars)
+[RegExp Learn](https://regexlearn.com/) - Per aprendre a utilitzar les expressions regulars.
+[RexExr](https://regexr.com/)
+[RegExper](https://regexper.com/) - Al crear l'expressió regular es visualitza aquest de manera gràfica com un diagrama
+[iHateRegEx](https://ihateregex.io/)
+
 
 # Generació de texts
 [LOREM.cat](https://www.lorem.cat/)
