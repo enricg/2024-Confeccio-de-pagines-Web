@@ -7,18 +7,27 @@
 </head>
     <body>
     <script>
+        let temporal = 5;
         try{
-            function dividir(a,b){
-                return a/b;
+            temporal = 3;
+            document.write("El valor dins del try de temporal és: " + temporal + "<br>");
+             function dividir(a,b){
+                 return a/b;
             }
-            a=prompt("Introdueix el numerador");
-            resultat=dividir(a,b);
-            document.write(resultat);
-        }catch(e){
-            // document.write("Descripció de l'error: <br>"+e.description +"<br>");
-            // document.write("Nombre d'error: <br>"+e.number);
-            document.write("Surt un error perquè no hem introduït el denominador")
+             a=parseInt(prompt("Introdueix el numerador"));
+            //b=parseInt(prompt("Introdueix el denominador"));
+             resultat=dividir(a,b);
+             document.write(a+"<br>");
+             document.write(resultat+"<br>");
+             }catch(e){
+            console.log("Valor de b: "+b);
+             //document.write("Descripció de l'error: " + e.description +"<br>");
+        //     document.write("Nombre d'error: " + e.number + "<br>");
+        //     document.write("Valor d'e: " + e + "<br>");
+            // document.write("Hi ha hagut un error <br>");
+            alert('Hi ha hagut un error. Torna a la pàgina principal');
         }
+        document.write("Valor de variable temporal después del try és: " + temporal + "<br>");
     </script>
 
     </body>

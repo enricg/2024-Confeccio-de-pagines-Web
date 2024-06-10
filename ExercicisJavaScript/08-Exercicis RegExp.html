@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicis RegExp</title>
+    <script src="js/08-Exercicis RegExp.js"></script>
+</head>
+<body>
+    <h2>Exercicis d'expressions regulars REGEXP</h2>
+    <hr>
+    <!-- <h3>Validació de codis postals</h3>
+    <p>RegExp: /^\d{5}$/</p>
+    <script>
+        console.log(esCpValid("12345")); // true
+        console.log(esCpValid("12345-6789")); // false
+        console.log(esCpValid("123456")); // false
+    </script> -->
+    <!-- <h3>Validació de correus electrònics</h3>
+    <script>
+        console.log(esEmailValid("test@example.com")); // true
+        console.log(esEmailValid("test.example.com")); // false
+    </script> -->
+
+    <!-- <h3>Extracció de números de telèfon</h3>
+    <script>
+        console.log(extreureNombresTelefon("Call me at (123) 456-7890 or (987) 654-3210 o al 972 81 92 49 99, que és el meu de Girona. un altre núm és aquest: (97) 45 53 222")); // ["(123) 456-7890", "(987) 654-3210"]
+        document.write(extreureNombresTelefon("Call me at (123) 456-7890 or (987) 654-3210 o al 972 81 92 49 99, que és el meu de Girona. un altre núm és aquest: (97) 45 53 222"));
+    </script> -->
+
+    <!-- <h3>Extracció de dominis de correu electrònic</h3>
+    <script>
+        console.log(extraureDominiEmail("Email del jefe: test@example.com el meu email personal: jo@hotmail.com")); // "example.com"
+        document.write(extraureDominiEmail("Email del jefe: test@example.com el meu email personal: jo@hotmail.com")); // "example.com"
+    </script> -->
+
+    <h3>Validació de números de targeta de crèdit</h3>
+    <script>        
+        console.log(esTargetaCreditValida("1234 5678 9012 3456")); // true
+        console.log(esTargetaCreditValida("1234567890123456")); // true
+        console.log(esTargetaCreditValida("1234-5678-9012-3456")); // false
+        console.log(esTargetaCreditValida("123456789012 3456")); // false
+    </script>    
+
+</body>
+</html>

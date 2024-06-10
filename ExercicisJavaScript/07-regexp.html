@@ -116,10 +116,15 @@
         // console.log("La frase és: " + frase + " ---> " + laMevaExpressio.test(frase));
 
         //cadena7 ;
-        laMevaExpressio=/Bar[csçz]*elona/; // conté la paraula dins d'una altra paraula
-        frase=prompt("Escriu la ciutat Barcelona?");
-        console.log("L'expressió és: " + "/Bar[csçz]*   elona/");
-        console.log("La frase és: " + frase + " ---> " + laMevaExpressio.test(frase));
+        // laMevaExpressio=/Bar[csçz]*elona/; // conté la paraula dins d'una altra paraula
+        // frase=prompt("Escriu la ciutat Barcelona?");
+        // console.log("L'expressió és: " + "/Bar[csçz]*   elona/");
+        // console.log("La frase és: " + frase + " ---> " + laMevaExpressio.test(frase));
+
+        cadena7="tapdance";
+        laMevaExpressio=/{?x}t a p{?-x}/;
+        console.log("L'expressió és: " + "(?x)t a p(?-x)");
+        console.log("La frase és: " + cadena7 + " ---> " + laMevaExpressio.test(cadena7));
     </script>
 
 </body>
