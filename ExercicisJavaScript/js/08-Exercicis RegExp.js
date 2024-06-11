@@ -27,3 +27,34 @@ function esTargetaCreditValida(frase){
     let patro = /(\d{16})|((\d{4}\s){3}\d{4})/;
     return patro.test(frase);
 }
+
+function treureParaulesDuplicades(text) {
+    const regex = /\b(\w+)\b(?:\s+\1)+/g;
+    return text.replace(regex, '$1');
+}
+
+function extraureHashtags(frase){
+    console.log(frase);
+    let patro = /#[^\s](\w|\d)+/g;
+    return frase.match(patro);
+}
+
+function esPasswordValida(contrassenya){
+    console.log(contrassenya)
+    let patro = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*]).{8,}$/;        
+    return patro.test(contrassenya);
+}
+
+function extraureDates(frase){
+    console.log(frase)
+    //let patro = /\d{2}\/\d{2}\/\d{4}/g;  
+    let patro = /(\d{1,2}\/){2}\d{4}/g;
+    return frase.match(patro);
+}
+
+function esURLValida(url){
+    console.log(url)
+    // let patro = /^(http|https|ftp|tftp)\:\/\/\   (\d|\w)+(\.(\w|\d)+)+/;
+    let patro = /^(http|https|ftp|tftp)\:\/\/(\w+[./]){2,}\w+/;
+    return patro.test(url); 
+}
