@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercici Calculadors</title>
+    <link rel="stylesheet" href="./css/10-calculadora.css">
+    <script src="./js/10-calculadora.js"></script>
+</head>
+<body>
+    <h1>Exercicis Javascript</h1>
+    <hr>
+    <div class="targeta">
+        <div class="titol">Calculadora</div>
+        <div class="exercici">
+            <div class="calculadora">
+                <input type="text" id="display" value="" class="pantalla">
+                <button class="tecla operador">%</button>
+                <button class="tecla operador" onclick="netejar('C')">C</button>
+                <button class="tecla operador" onclick="netejar('CE')">CE</button>
+                <button class="tecla operador" onclick="netejar('<')"><</button>
+                <button class="tecla operador">1/x</button>
+                <button class="tecla operador">x2</button>
+                <button class="tecla operador">x1/2</button>
+                <button class="tecla operador" onclick="afegir('/')">/</button>
+                <button class="tecla numero" onclick="afegir(7)">7</button>
+                <button class="tecla numero" onclick="afegir(8)">8</button>
+                <button class="tecla numero" onclick="afegir(9)">9</button>
+                <button class="tecla operador" onclick="afegir('*')">*</button>
+                <button class="tecla numero" onclick="afegir(4)">4</button>
+                <button class="tecla numero" onclick="afegir(5)">5</button>
+                <button class="tecla numero" onclick="afegir(6)">6</button>
+                <button class="tecla operador" onclick="afegir('-')">-</button>
+                <button class="tecla numero" onclick="afegir(1)">1</button>
+                <button class="tecla numero" onclick="afegir(2)">2</button>
+                <button class="tecla numero" onclick="afegir(3)">3</button>
+                <button class="tecla operador" onclick="afegir('+')">+</button>
+                <button class="tecla operador" onclick="afegir('+/-')">+/-</button>
+                <button class="tecla numero" onclick="afegir(0)">0</button>
+                <button class="tecla operador" onclick="afegir(',')">,</button>
+                <button class="tecla operador" onclick="resol()">=</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

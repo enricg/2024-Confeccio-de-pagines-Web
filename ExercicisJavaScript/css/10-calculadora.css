@@ -1,0 +1,53 @@
+.targeta{
+    width: 300px;
+    height: 550px;
+    border: 1px solid black;
+}
+
+.titol{
+    height: 100px;
+    background-color: pink;
+    text-align: center;
+}
+
+.exercici{
+    height: 450px;
+    background-color: gray;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.calculadora{
+    width: 95%;
+    height: 95%;
+    background-color: rgb(166, 164, 164);
+    margin: 5px 0;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.pantalla{
+    width: 100%;
+    height: 50px;
+    background-color: white;
+    margin: 0 10px;
+}
+
+.tecla{
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+    }
+    
+.numero{
+    background-color: yellow;
+    }
+    
+.operador{
+    background-color: beige;
+}
