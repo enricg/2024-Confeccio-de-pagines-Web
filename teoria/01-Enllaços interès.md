@@ -37,18 +37,18 @@
 [RegExper](https://regexper.com/) - Al crear l'expressió regular es visualitza aquest de manera gràfica com un diagrama
 [iHateRegEx](https://ihateregex.io/)
 
-
-# Generació de texts
+# Recursos
+## Generació de texts
 [LOREM.cat](https://www.lorem.cat/)
 [Chiquito Ipsum](https://www.chiquitoipsum.com/)
 
 # Com funciona...
 [Flexbox](https://bennettfeely.com/flexplorer/)
 
-# Eines frontend
 ## HTML
 [100L5. all Online Tools in "One Box](https://10015.io/)
 ## CSS3
+[CSS Loaders](https://css-loaders.com/)
 [Efectes d'imatge amb CSS](https://bennettfeely.com/image-effects/)
 [Gradients amb CSS](https://bennettfeely.com/gradients/)
 [Creació de clips CSS](https://bennettfeely.com/clippy/)
@@ -68,3 +68,10 @@
 [Blobmaker](https://www.blobmaker.app/)
 [Free Frontend](https://freefrontend.com/)
 [Pseudoflow](https://online.pseudoflow.app/) - Programa i automàticament genera diagrama de flux
+[Can I Use](https://caniuse.com/) - Ens indica amb quines versions i navegadors funciona qualsevol cosa que vulguem utilitzar en una web
+[SVGrepo](https://www.svgrepo.com/)
+
+## APIs
+[Public APIS](https://publicapis.dev/)
+[Rapid API](rapidapi.com/hub)
+[SWAPI](https://swapi.dev/) - APi de Star Wars
