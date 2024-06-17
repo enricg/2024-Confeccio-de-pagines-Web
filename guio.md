@@ -31,41 +31,40 @@
         - [x] :not 
     2.  
         1.  Pseudo-classes per a formularis: targetes amb
-            - [ ] :focus
-            - [ ] :disabled
-            - [ ] :valid /:invalid
-            - [ ] :required
-            - [ ] :checked
-            - [ ] :in-range / :out-of-range
+            - [x] :focus
+            - [x] :disabled
+            - [x] :valid /:invalid
+            - [x] :required
+            - [x] :checked
+            - [x] :in-range / :out-of-range
         2.  Targetes amb unitats relatives
 9.  Caixes amb:
-    - [ ] canvi de propietat pseudoclasse :hover
-    - [ ] Align-content
+    - [x] canvi de propietat pseudoclasse :hover
+    - [x] Align-content
     - [x] Transform
 10. Animacions
-    - [ ] Pàgina amb caixa amb animació
-    - [ ] pàgina amb targetes de pel·lícules que apareixen mitjançant animació
+    - [x] Pàgina amb caixa amb animació
+    - [x] pàgina amb targetes de pel·lícules que apareixen mitjançant animació
 11. Més animacions
-    - [ ] caixa amb 3 quadres animats
-    - [ ] Menú vertical amb transició
-    - [ ] Títol animat
-    - [ ] Afegit de fonts
+    - [x] caixa amb 3 quadres animats
+    - [x] Menú vertical amb transició
+    - [x] Títol animat
+    - [x] Afegit de fonts
 12. 
-    - [ ] Fer CV amb format actual
+    - [x] Fer CV amb format actual
 13. 
-    - [ ] Pàgina amb cartellera de cine
+    - [x] Pàgina amb cartellera de cine
 14. 
-    - [ ] Ús de components bootstrap
+    - [x] Ús de components bootstrap
 15. 
-    - [ ] Pàgina amb menú vertical animat, articles, i opcions de menú enllaçats als articles
-    - [ ] Menú vertical amb submenús al mateix nivell
+    - [x] Pàgina amb menú vertical animat, articles, i opcions de menú enllaçats als articles
+    - [x] Menú vertical amb submenús al mateix nivell
 16. 
-    - [ ] Proves de formulari
+    - [x] Proves de formulari
 17. 
-    - [ ] Formulari
+    - [x] Formulari
 18. 
-    - [ ] Formulari
-19. 
-    - [ ] Pàgina amb responsive Grid Layout
-20. 
+    - [x] Pàgina amb responsive Grid Layout
+. 
     - [ ] Examen (pàgina)
+---

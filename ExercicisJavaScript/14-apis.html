@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/14-apis.css">
+    <script src="./js/14-apis.js"></script>
+</head>
+<body>
+<h2>Proves</h2>
+<hr>
+<!-- <select onchange="showBreedImage(value)" name="breed_selector" id="breed_selector"></select>
+
+<div>
+  <a id="wiki_link" target="_blank"></a>
+  <div id="breed_json"></div>
+</div>
+
+<div>
+  <img id="breed_image"></img>
+</div> -->
+
+<hr>
+<!-- <button id="dadesSW">Obtenir dades Star Wars</button> -->
+<button id="dadesSW" onclick="mostraInfoSW()">Obtenir dades Star Wars</button>
+<div id="sortida"></div>
+
+<script>
+  // buscarPersonaje(1)
+
+  // document.getElementById('dadesSW').addEventListener('click', function() {
+  //   const sortida = document.getElementById('sortida');
+  //   sortida.innerHTML = 'Carregant...';
+
+  //   fetch('https://swapi.dev/api/films/')
+  //     .then(response => response.json())
+  //     // .then(data => { sortida.innerHTML = 
+  //     //   `<p>Nom: ${data.name}</p>
+  //     //   <p>Alçada: ${data.height} cm</p>
+  //     //   <p>Pes: ${data.mass} kg</p>
+  //     //   <p>Color de cabell: ${data.hair_color}</p>
+  //     //   <p>Color de pell: ${data.skin_color}</p>
+  //     //   <p>Color d'ulls: ${data.eye_color}</p>
+  //     //   <p>Any de naixement: ${data.birth_year}</p>
+  //     //   <p>Gènere: ${data.gender}</p>`;
+  //     // })
+  //     .then((data) => {
+  //       //console.log(data);
+  //       console.log(data.count);
+  //       for(i=0;i<data.length;i++){
+  //         sortida.innerHTML = `<p>${data[i]}</p>`;
+  //       //     console.log(data[i].Nom_Districte);
+  //       }
+  //     })
+  //     .catch(error => {
+  //       sortida.innerHTML = `<p>Error: ${error.message}</p>`;
+  //     });
+  // });
+</script>
+</body>
+</html>
