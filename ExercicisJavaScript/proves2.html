@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proves 2</title>
+</head>
+<body>
+    <h1>El temps actual</h1>
+    <p id="weather">Carregant...</p>
+    
+    <script>
+        // URL de l'API
+        const apiKey = 'LA_TEVA_CLAU_API'; // Reemplaça amb la teva clau d'API
+        const city = 'Barcelona';
+        const url = `https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${city}&aqi=no`;
+
+        // Fer la petició a l'API
+        fetch(url)
+        .then(response => {
+            // Verificar si la resposta és correcta
+            if (!response.ok) {
+            throw new Error('Error en la resposta de l\'API');
+            }
+            return response.json(); // Convertir la resposta a JSON
+        })
+        .then(data => {
+            // Treballar amb les dades
+            console.log(data); // Mostra les dades a la consola
+            // Aquí pots actualitzar la interfície d'usuari amb les dades de l'API
+            document.getElementById('weather').innerText = `El temps a ${data.location.name} és ${data.current.temp_c}°C`;
+        })
+        .catch(error => {
+            // Tractar els errors
+            console.error('Hi ha hagut un problema amb la petició de l\'API:', error);
+        });
+
+    </script>
+</body>
+</html>
