@@ -1,0 +1,250 @@
+/* 10-calculadora */
+
+.targeta{
+    width: 300px;
+    height: 550px;
+    border: 1px solid black;
+}
+
+.titol{
+    height: 100px;
+    background-color: pink;
+    text-align: center;
+}
+
+.exercici{
+    height: 450px;
+    background-color: gray;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.calculadora{
+    width: 95%;
+    height: 95%;
+    background-color: rgb(166, 164, 164);
+    margin: 5px 0;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.pantalla{
+    width: 100%;
+    height: 50px;
+    background-color: white;
+    margin: 0 10px;
+}
+
+.tecla{
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+    }
+    
+.numero{
+    background-color: yellow;
+    }
+    
+.operador{
+    background-color: beige;
+}
+
+/* 12-TicTacToe.css */
+
+.tauler{
+    width: 250px;
+    height: 250px;
+    background: rgba(128, 128, 128, 0.466);
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.casella{
+    width: 50px;
+    height: 50px;
+    background: gray;
+}
+
+.vermella{
+    width: 50px;
+    height: 50px;
+    background: red;
+    border-radius: 50%;
+}
+
+.verda{
+    width: 50px;
+    height: 50px;
+    background: green;
+    border-radius: 50%;
+}
+
+#button{
+    height: 200px;
+    width: 200px;
+}
+
+/* 13-json */
+
+h1{
+    text-align: center;
+}
+.contenidor{
+    display: flex;
+    justify-content: space-around;
+}
+.targeta{
+    height: 200px;
+    width: 200px;
+    border: 1px solid black;
+}
+
+.heroi{
+    height: 30px;
+    background-color: aqua;
+    text-align: center;
+}
+
+.poders{
+    height: 170px;
+    background-color: bisque;
+    text-align: center;
+}
+
+.red{
+    background-color: red;
+}
+.blue{
+    background-color: blue;
+}
+.green{
+    background-color: green;
+}
+.yellow{
+    background-color: yellow;
+}
+
+/* 14-API Star Wars */
+
+h1{
+    text-align: center;
+}
+.contenidor{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.targeta{
+    height: 200px;
+    width: 200px;
+    border: 1px solid black;
+    margin: 10px;
+}
+
+.titol{
+    height: 30px;
+    background-color: aqua;
+    text-align: center;
+}
+
+.altres{
+    height: 170px;
+    background-color: bisque;
+    text-align: center;
+}
+
+.red{
+    background-color: red;
+}
+.blue{
+    background-color: blue;
+}
+.green{
+    background-color: green;
+}
+.yellow{
+    background-color: yellow;
+}
+
+/* 14-apis */
+
+img {
+    max-width: 40%;
+    height: auto;      
+}
+
+/* 16-validaForms */
+
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.targeta{
+    width: 250px;
+    height: 300px;
+    border: 1px dotted black;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.titol{
+    text-align: center;
+    color: red;
+    height: 15%;
+    border: 1px dotted black;
+}
+
+.exemple{
+    height: 85%;
+    border: 1px dotted black;
+    display: flex;
+    flex-direction: column;
+}
+
+.exemple1{
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+}
+
+#boto{
+    width: 50px;
+    height: 30px;
+    /* background-color:blanchedalmond ;
+    cursor: pointer; */
+}
+
+div > p {
+    height: 30%;
+    margin: 5px;
+    text-align: justify;
+}
+
+/* #boto:hover{
+    background-color: burlywood;
+} */
+
+ul{
+    list-style: none;
+}
+
+/* legend{
+    text-align: right;
+} */
+
+/* 17-projecteBootstrap */
+
+.dropdown{
+    padding-left: 16px;
+    padding-right: 16px;
+  }
