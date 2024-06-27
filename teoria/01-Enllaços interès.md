@@ -73,5 +73,5 @@
 
 ## APIs
 [Public APIS](https://publicapis.dev/)
-[Rapid API](rapidapi.com/hub)
+[Rapid API](https://rapidapi.com/hub)
 [SWAPI](https://swapi.dev/) - APi de Star Wars
