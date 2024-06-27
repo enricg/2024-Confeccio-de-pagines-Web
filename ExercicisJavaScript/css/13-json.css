@@ -22,3 +22,16 @@ h1{
     background-color: bisque;
     text-align: center;
 }
+
+.red{
+    background-color: red;
+}
+.blue{
+    background-color: blue;
+}
+.green{
+    background-color: green;
+}
+.yellow{
+    background-color: yellow;
+}

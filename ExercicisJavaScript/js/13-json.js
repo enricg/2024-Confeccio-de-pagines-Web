@@ -14,7 +14,9 @@ function llistaHerois(){
     fetch("./JSON/superheroes.json")
     .then((response) => response.json())
     .then((data) => {        
-        data.members.forEach(element => {novaTargeta(element);});
+        data.members.forEach(element => {
+            novaTargeta(element);
+        });
     })
     .catch((error) => {
         console.error("Error al llegir l'arxiu JSON: ", error);
@@ -30,8 +32,8 @@ function novaTargeta(element){
     let nouHeroi = document.createElement("div");
     nouHeroi.className+= "heroi";
     
-    let nouTextHeroi = document.createTextNode(element.name);
-    nouHeroi.appendChild(nouTextHeroi); // afegeix el nom del superheroi.
+    // let nouTextHeroi = document.createTextNode(element.name);
+    nouHeroi.appendChild(document.createTextNode(element.name)); // afegeix el nom del superheroi.
     novaTargeta.appendChild(nouHeroi);
     
     // DIV d'habilitats
@@ -48,9 +50,16 @@ function afegeixHabilitats(poders){
     nouHabilitats.className+= "poders";
     
     poders.forEach(poder => {
-        let nouTextHabilitats = document.createTextNode(poder);
-        nouHabilitats.appendChild(nouTextHabilitats); // afegeix el nom d'habilitats.
+        //let nouTextHabilitats = document.createTextNode(poder);
+        nouHabilitats.appendChild(document.createTextNode(poder)); // afegeix el nom d'habilitats.
         nouHabilitats.appendChild(document.createElement("br")); // afegeix un salt de línia
     });
     return nouHabilitats;
+}
+
+function canviaColor(color){
+    const conjuntPoders = document.getElementsByClassName("poders");
+    for(i=0;i<conjuntPoders.length;i++){
+        conjuntPoders[i].style.backgroundColor=color;
+    }
 }
