@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemples jQuery</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+    <!-- Hola món -->
+    <!-- <p id="paragraf">Text</p> -->
+    <!-- <script>
+        // var element = document.getElementById("paragraf");
+        // element.innerHTML = "Hola món, amb JavaScript";
+        
+        // $(document).ready(function(){
+        //     $("#paragraf").text("Hola món, amb JQuery");
+        // });
+
+        $(function(){
+            $("#paragraf").text("Hola món, també amb JQuery");
+        });
+    </script> -->
+    
+    <!-- noConflict -->
+    <!-- Hi ha llibreries que utilitzen el $. Amb noConflict evitem conflictes. Substituim el $ per JQuery. -->
+    <!-- <script>
+        // jQuery.noConflict();
+        // jQuery(function(){
+        //     jQuery("#paragraf").text("Hola món, també amb JQuery");
+        // });
+        
+        // Podem crear un àlies
+        var abc = jQuery.noConflict();
+        abc(function(){
+            abc("#paragraf").text("Hola món, també amb JQuery");
+        });
+    </script> -->
+
+    <!-- JQuery Object -->
+    <!-- <div id="laMevaCapa"></div>
+    <script>
+        var selectorCapa = $("#laMevaCapa");
+        console.log(selectorCapa);
+        var laMevaCapa = selectorCapa[0];
+        console.log(laMevaCapa);
+    </script> -->
+
+    <!-- Selectors de JQuery -->
+    <!-- 
+    Tipus
+    Classe
+    Id
+    Possessió d'un atribut
+    Valor d'un atribut
+    Index
+    Pseudo-estat 
+    -->
+    <!-- <a href="index.html"></a>
+    <a id="segon-link"></a>
+    <a class="exemple"></a>
+    <a href="noConflict.html" class="exemple"></a>
+    <span class="exemple"></span>
+    <script>
+        $(function(){
+            $("*")
+            $("a")
+            $(".exemple")
+            $("#segon-link")
+            $("[href]")
+            $("[href]='index.html")
+            $("a:eq(1)")
+            $("a.not(:eq(0)")
+            $("a.not(.exemple")
+        })
+    </script> -->
+
+    <!-- Mostrar i ocultar elements -->
+    <!-- <p id="elMeuParagraf">Això és un paràgraf...</p>
+    <script>
+        $(function(){
+            // $("#elMeuParagraf").hide(); // ocultar l'element
+            // $("#elMeuParagraf").show(); // mostrar l'element
+
+            let elMeuParagraf = $("elMeuParagraf");
+            elMeuParagraf.show();
+        });
+    </script> -->
+
+    <!-- events: click -->
+    <p id="elMeuParagraf">Hola què tal?</p>
+    <button id="botoAccio">Fes Click Aquí</button>
+    <script>
+        $(function(){
+            let estaOcult = false;
+            $("#botoAccio").click(function(){
+                if(estaOcult){
+                    $("#elMeuParagraf").show();
+                }else{
+                    $("#elMeuParagraf").hide();
+                }
+                estaOcult = !estaOcult;
+            })
+        })
+    </script>
+</body>
+</html>
