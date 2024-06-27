@@ -1,0 +1,39 @@
+h1{
+    text-align: center;
+}
+.contenidor{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.targeta{
+    height: 200px;
+    width: 200px;
+    border: 1px solid black;
+    margin: 10px;
+}
+
+.titol{
+    height: 30px;
+    background-color: aqua;
+    text-align: center;
+}
+
+.altres{
+    height: 170px;
+    background-color: bisque;
+    text-align: center;
+}
+
+.red{
+    background-color: red;
+}
+.blue{
+    background-color: blue;
+}
+.green{
+    background-color: green;
+}
+.yellow{
+    background-color: yellow;
+}
