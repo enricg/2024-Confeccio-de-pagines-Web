@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Població</title>
+    <script src="./js/15-Poblacio.js"></script>
+    <!-- <link rel="stylesheet" href="prova"> -->
+</head>
+<body>
+    <h1>Dades de l'ajuntament</h1>
+    <hr>
+    <label for="districtes">Selecciona un districte:</label><br>
+    <select id="districtes" name="districtes" onchange="carregaBarris(this.value);"></select><br>
+    <label for="barris">Selecciona un barri:</label><br>
+    <select name="barris" id="barris"></select>
+    <script>
+        fetch("./JSON/2024_pad_mdbas.json")
+        .then((response) => response.json())
+        .then((data) => {
+            data.forEach(element => {
+                let idDistricte= nouDistricte(element.Nom_Districte);
+                nouBarri(idDistricte,element.Nom_Barri);
+            });
+        })
+        .catch((error) => {
+            console.error("Error al llegir l'arxiu JSON: ", error);
+        })
+    </script>
+
+    
+</body>
+</html>
