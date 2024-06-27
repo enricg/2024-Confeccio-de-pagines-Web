@@ -17,6 +17,15 @@
         <div class="contenidor" id="contenidor">
             <div id="info"></div>
         </div>
+        <hr>
+        <!-- Creem una llista per a poder canviar el color de les targetes -->
+        <label for="colors">Escull un color:</label>
+        <select name="colors" id="colors" onchange="canviaColor(this.value)">
+        <option value="red">Vermell</option>
+        <option value="blue">Blau</option>
+        <option value="yellow">Groc</option>
+        <option value="green">Verd</option>
+        </select>
 
         <script>
             llistaHerois();
