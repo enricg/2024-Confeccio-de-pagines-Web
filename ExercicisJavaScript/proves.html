@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Exemple de Document</title>
+</head>
+<body>
+  <div id="myDiv" class="myClass">Aquest és un div</div>
+  <script>
+    // Canviar el títol del document
+    document.title = 'Nou Títol';
+    // Seleccionar un element per ID
+    let myDiv = document.getElementById('myDiv');
+    // Canviar el contingut HTML d'un element
+    myDiv.innerHTML = 'Contingut nou';
+    // Crear un nou element
+    let newParagraph = document.createElement('p');
+    newParagraph.textContent = 'Aquest és un nou paràgraf';
+    // Afegir el nou element al cos del document
+    document.body.appendChild(newParagraph);
+    let newParagraph2 = document.createElement('p');
+    newParagraph2.textContent = 'hORA QUASI D"acabar la sessió';
+    document.body.appendChild(newParagraph2);
+    // Afegir un esdeveniment de clic al document
+    document.addEventListener('click', function() {
+      console.log('Document clicat!');
+    });
+  </script>
+</body>
+</html>
